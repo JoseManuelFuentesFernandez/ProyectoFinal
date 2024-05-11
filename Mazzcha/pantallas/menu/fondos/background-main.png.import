@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dby5n0bkrldii"
-path="res://.godot/imported/background-main.png-aaf8bb266bcc6bed5bf295cf66186ea1.ctex"
+path="res://.godot/imported/background-main.png-734598376ecb5d540b8bfa898029b143.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pantallas/mazmorras/background-main.png"
-dest_files=["res://.godot/imported/background-main.png-aaf8bb266bcc6bed5bf295cf66186ea1.ctex"]
+source_file="res://pantallas/menu/fondos/background-main.png"
+dest_files=["res://.godot/imported/background-main.png-734598376ecb5d540b8bfa898029b143.ctex"]
 
 [params]
 
