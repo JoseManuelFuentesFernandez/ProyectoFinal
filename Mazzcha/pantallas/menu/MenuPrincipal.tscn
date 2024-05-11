@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bn7qhyg3nnvym"]
+[gd_scene load_steps=5 format=3 uid="uid://bn7qhyg3nnvym"]
 
+[ext_resource type="Script" path="res://menu.gd" id="1_qmr4p"]
 [ext_resource type="Texture2D" uid="uid://dby5n0bkrldii" path="res://pantallas/menu/fondos/background-main.png" id="1_qq673"]
 [ext_resource type="Texture2D" uid="uid://du5nni6o0pxm2" path="res://pantallas/menu/botones/boton-jugar-removebg-preview.png" id="1_s8xiu"]
 [ext_resource type="Texture2D" uid="uid://bh4a5wt1n166x" path="res://pantallas/menu/botones/boton-jugar-removebg-preview-pressed.png" id="2_3ppa1"]
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_qmr4p")
 
 [node name="ControlBG" type="Control" parent="."]
 layout_mode = 1
@@ -45,7 +47,7 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control"]
+[node name="PlayButton" type="TextureButton" parent="Control"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -63,3 +65,5 @@ mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_s8xiu")
 texture_pressed = ExtResource("2_3ppa1")
 stretch_mode = 3
+
+[connection signal="pressed" from="Control/PlayButton" to="." method="_on_play_button_pressed"]
