@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bn7qhyg3nnvym"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_qmr4p"]
-[ext_resource type="Texture2D" uid="uid://dby5n0bkrldii" path="res://pantallas/menu/fondos/background-main.png" id="1_qq673"]
+[ext_resource type="Texture2D" uid="uid://dby5n0bkrldii" path="res://pantallas/menu/fondo/background-main.png" id="1_qq673"]
 [ext_resource type="Texture2D" uid="uid://du5nni6o0pxm2" path="res://pantallas/menu/botones/boton-jugar-removebg-preview.png" id="1_s8xiu"]
 [ext_resource type="Texture2D" uid="uid://bh4a5wt1n166x" path="res://pantallas/menu/botones/boton-jugar-removebg-preview-pressed.png" id="2_3ppa1"]
 
