@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csyk0el65mlx4"
-path="res://.godot/imported/hills&trees.png-19f3f10da271f015d423a7170c5a0dc1.ctex"
+uid="uid://beauuy7a5awjs"
+path="res://.godot/imported/Battleground2.png-1da846f38fc9d6518bcffdc5b21b3fa5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pantallas/mazmorras/Battleground1/Bright/hills&trees.png"
-dest_files=["res://.godot/imported/hills&trees.png-19f3f10da271f015d423a7170c5a0dc1.ctex"]
+source_file="res://pantallas/mazmorras/Battleground4/Bright/Battleground2.png"
+dest_files=["res://.godot/imported/Battleground2.png-1da846f38fc9d6518bcffdc5b21b3fa5.ctex"]
 
 [params]
 

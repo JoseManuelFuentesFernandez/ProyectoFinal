@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d011l14733khr"
-path="res://.godot/imported/dragon.png-da2c4e363ed447d5823eb644df18a380.ctex"
+uid="uid://cg1nj4qgsn5ko"
+path="res://.godot/imported/Battleground4_thumb.png-118e5c073a8cf5d1f9f034aae04a86ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pantallas/mazmorras/Battleground2/Bright/dragon.png"
-dest_files=["res://.godot/imported/dragon.png-da2c4e363ed447d5823eb644df18a380.ctex"]
+source_file="res://pantallas/mazmorras/Battleground2/Bright/Battleground4_thumb.png"
+dest_files=["res://.godot/imported/Battleground4_thumb.png-118e5c073a8cf5d1f9f034aae04a86ab.ctex"]
 
 [params]
 

@@ -7,3 +7,33 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Maz1" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Maz2" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Maz3" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Maz4" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2

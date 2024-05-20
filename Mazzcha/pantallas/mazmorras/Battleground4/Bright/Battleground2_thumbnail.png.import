@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beauuy7a5awjs"
-path="res://.godot/imported/Battleground2.png-e2845c59bb3388921e9f77e9a3366ded.ctex"
+uid="uid://b7qm1mfdlma2r"
+path="res://.godot/imported/Battleground2_thumbnail.png-53d8a3e947f013336a728fd64e48c13a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pantallas/mazmorras/Battleground2/Bright/Battleground2.png"
-dest_files=["res://.godot/imported/Battleground2.png-e2845c59bb3388921e9f77e9a3366ded.ctex"]
+source_file="res://pantallas/mazmorras/Battleground4/Bright/Battleground2_thumbnail.png"
+dest_files=["res://.godot/imported/Battleground2_thumbnail.png-53d8a3e947f013336a728fd64e48c13a.ctex"]
 
 [params]
 
