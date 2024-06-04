@@ -33,8 +33,8 @@ mouse_filter = 2
 [node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/CenterContainer"]
 layout_mode = 2
 mouse_filter = 2
-theme_override_constants/margin_left = 1920
-theme_override_constants/margin_right = 1920
+theme_override_constants/margin_left = 725
+theme_override_constants/margin_right = 750
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/MarginContainer"]
 layout_mode = 2
