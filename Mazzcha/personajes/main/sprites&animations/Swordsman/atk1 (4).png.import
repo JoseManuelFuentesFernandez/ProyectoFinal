@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vnqfq8myumbe"
-path="res://.godot/imported/Attack_2.png-440b7e4675b5a4c0904ff740f1e86af0.ctex"
+uid="uid://cvm3dgcsw8dtk"
+path="res://.godot/imported/atk1 (4).png-ea7ae9717d336c996c077f01d3c65ad9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/main/sprites&animations/Swordsman/Attack_2.png"
-dest_files=["res://.godot/imported/Attack_2.png-440b7e4675b5a4c0904ff740f1e86af0.ctex"]
+source_file="res://personajes/main/sprites&animations/Swordsman/atk1 (4).png"
+dest_files=["res://.godot/imported/atk1 (4).png-ea7ae9717d336c996c077f01d3c65ad9.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dinlelclchfkr"
-path="res://.godot/imported/Walk.png-f69003a06db369652a37f829329ac2a4.ctex"
+uid="uid://bxl4ybf2vawqt"
+path="res://.godot/imported/atk1 (2).png-cffe8a313636783f742fbc479c0d2d26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/main/sprites&animations/Swordsman/Walk.png"
-dest_files=["res://.godot/imported/Walk.png-f69003a06db369652a37f829329ac2a4.ctex"]
+source_file="res://personajes/main/sprites&animations/Swordsman/atk1 (2).png"
+dest_files=["res://.godot/imported/atk1 (2).png-cffe8a313636783f742fbc479c0d2d26.ctex"]
 
 [params]
 

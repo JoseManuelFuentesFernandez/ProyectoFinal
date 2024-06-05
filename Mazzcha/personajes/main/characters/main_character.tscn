@@ -1,58 +1,63 @@
-[gd_scene load_steps=11 format=3 uid="uid://1u8fu60wg640"]
+[gd_scene load_steps=13 format=3 uid="uid://1u8fu60wg640"]
 
-[ext_resource type="Texture2D" uid="uid://hcca3mokvh2c" path="res://personajes/Main/sprites&animations/Swordsman/idle (1).png" id="1_rftih"]
-[ext_resource type="Texture2D" uid="uid://o1b2tfmhonod" path="res://personajes/Main/sprites&animations/Swordsman/idle (2).png" id="2_5jmct"]
-[ext_resource type="Texture2D" uid="uid://bgghxvkdgygtc" path="res://personajes/Main/sprites&animations/Swordsman/idle (3).png" id="3_smfwm"]
-[ext_resource type="Texture2D" uid="uid://bevw3c0a4tig3" path="res://personajes/Main/sprites&animations/Swordsman/idle (4).png" id="4_8vr5l"]
-[ext_resource type="Texture2D" uid="uid://bphtqexatma84" path="res://personajes/Main/sprites&animations/Swordsman/idle (5).png" id="5_7oscn"]
-[ext_resource type="Texture2D" uid="uid://dc15sghyvt7o8" path="res://personajes/Main/sprites&animations/Swordsman/idle (6).png" id="6_1cc0q"]
-[ext_resource type="Texture2D" uid="uid://dbewiv5giw8ok" path="res://personajes/Main/sprites&animations/Swordsman/idle (7).png" id="7_hhft4"]
-[ext_resource type="Texture2D" uid="uid://dhwp8d1ayes2p" path="res://personajes/Main/sprites&animations/Swordsman/idle (8).png" id="8_b5nsa"]
-[ext_resource type="Script" path="res://personajes/main/characters/actions.gd" id="9_ools1"]
+[ext_resource type="Script" path="res://personajes/main/characters/main_character.gd" id="1_gmolb"]
+[ext_resource type="Texture2D" uid="uid://hcca3mokvh2c" path="res://personajes/main/sprites&animations/Swordsman/idle (1).png" id="1_rftih"]
+[ext_resource type="Texture2D" uid="uid://o1b2tfmhonod" path="res://personajes/main/sprites&animations/Swordsman/idle (2).png" id="2_5jmct"]
+[ext_resource type="Texture2D" uid="uid://bgghxvkdgygtc" path="res://personajes/main/sprites&animations/Swordsman/idle (3).png" id="3_smfwm"]
+[ext_resource type="Texture2D" uid="uid://bevw3c0a4tig3" path="res://personajes/main/sprites&animations/Swordsman/idle (4).png" id="4_8vr5l"]
+[ext_resource type="Texture2D" uid="uid://bphtqexatma84" path="res://personajes/main/sprites&animations/Swordsman/idle (5).png" id="5_7oscn"]
+[ext_resource type="Texture2D" uid="uid://dbewiv5giw8ok" path="res://personajes/main/sprites&animations/Swordsman/idle (7).png" id="7_hhft4"]
+[ext_resource type="Texture2D" uid="uid://dhwp8d1ayes2p" path="res://personajes/main/sprites&animations/Swordsman/idle (8).png" id="8_b5nsa"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_vq123"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_rftih")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_5jmct")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_smfwm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_8vr5l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_7oscn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_1cc0q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_hhft4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_b5nsa")
-}],
-"loop": true,
-"name": &"idle_swordman",
-"speed": 5.0
-}]
+[sub_resource type="Animation" id="Animation_vrh6i"]
+resource_name = "idle_swordman"
+
+[sub_resource type="Animation" id="Animation_undp3"]
+length = 2.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_rftih"), ExtResource("2_5jmct"), ExtResource("3_smfwm"), ExtResource("4_8vr5l"), ExtResource("5_7oscn"), ExtResource("5_7oscn"), ExtResource("7_hhft4"), ExtResource("8_b5nsa")]
+}
+
+[sub_resource type="Animation" id="Animation_1x5un"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("8_b5nsa")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h47ts"]
+_data = {
+"RESET": SubResource("Animation_1x5un"),
+"atk1_swordman": SubResource("Animation_vrh6i"),
+"idle_swordman": SubResource("Animation_undp3")
+}
 
 [node name="MainCharacter" type="CharacterBody2D"]
+script = ExtResource("1_gmolb")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
+[node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_vq123")
-animation = &"idle_swordman"
-frame_progress = 0.899477
-script = ExtResource("9_ools1")
+texture = ExtResource("8_b5nsa")
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
+[node name="health_bar" type="ProgressBar" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -62,3 +67,8 @@ offset_right = 47.0
 offset_bottom = 169.0
 grow_horizontal = 2
 value = 100.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_h47ts")
+}
