@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://2ica3tdeq0ka"]
+
+[ext_resource type="Script" path="res://pantallas/combate/combate.gd" id="1_of8fx"]
+[ext_resource type="PackedScene" uid="uid://1u8fu60wg640" path="res://personajes/main/characters/main_character.tscn" id="2_gkxah"]
+[ext_resource type="Texture2D" uid="uid://beauuy7a5awjs" path="res://pantallas/mazmorras/Battleground4/Bright/Battleground2.png" id="2_uyf5o"]
+
+[node name="Combate" type="Node2D"]
+script = ExtResource("1_of8fx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+show_behind_parent = true
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_uyf5o")
+
+[node name="MainCharacter" parent="." instance=ExtResource("2_gkxah")]
+position = Vector2(373, 654)
+scale = Vector2(2, 2)
