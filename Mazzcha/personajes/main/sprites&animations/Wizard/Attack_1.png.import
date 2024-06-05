@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cewou77d67k6w"
-path="res://.godot/imported/Attack_1.png-89f95a1f1c7f717248413fd293784b0f.ctex"
+path="res://.godot/imported/Attack_1.png-1f5f34822af2eda082a01935d8448db0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/Main/sprites&animations/Wizard/Attack_1.png"
-dest_files=["res://.godot/imported/Attack_1.png-89f95a1f1c7f717248413fd293784b0f.ctex"]
+source_file="res://personajes/main/sprites&animations/Wizard/Attack_1.png"
+dest_files=["res://.godot/imported/Attack_1.png-1f5f34822af2eda082a01935d8448db0.ctex"]
 
 [params]
 

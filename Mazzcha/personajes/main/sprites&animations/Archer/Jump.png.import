@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bni6kgnxoyqpc"
-path="res://.godot/imported/Jump.png-c3629b899104353d2b6aac528f10daed.ctex"
+path="res://.godot/imported/Jump.png-ae3d37fe45d7873e8cb525e61580c4a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/Main/sprites&animations/Archer/Jump.png"
-dest_files=["res://.godot/imported/Jump.png-c3629b899104353d2b6aac528f10daed.ctex"]
+source_file="res://personajes/main/sprites&animations/Archer/Jump.png"
+dest_files=["res://.godot/imported/Jump.png-ae3d37fe45d7873e8cb525e61580c4a7.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhwp8d1ayes2p"
-path="res://.godot/imported/idle (8).png-97c376031d4d38f4ac90e3ae3e525fd4.ctex"
+path="res://.godot/imported/idle (8).png-a8856cca800208c474399f67cde7b799.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/Main/sprites&animations/Swordsman/idle (8).png"
-dest_files=["res://.godot/imported/idle (8).png-97c376031d4d38f4ac90e3ae3e525fd4.ctex"]
+source_file="res://personajes/main/sprites&animations/Swordsman/idle (8).png"
+dest_files=["res://.godot/imported/idle (8).png-a8856cca800208c474399f67cde7b799.ctex"]
 
 [params]
 

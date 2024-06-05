@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5e27bllb8hvu"
-path="res://.godot/imported/Hurt.png-987636fafce029371f7d60f212d42218.ctex"
+path="res://.godot/imported/Hurt.png-6b2a608d6dd71d95928ce0bcf838f65c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/Main/sprites&animations/Archer/Hurt.png"
-dest_files=["res://.godot/imported/Hurt.png-987636fafce029371f7d60f212d42218.ctex"]
+source_file="res://personajes/main/sprites&animations/Archer/Hurt.png"
+dest_files=["res://.godot/imported/Hurt.png-6b2a608d6dd71d95928ce0bcf838f65c.ctex"]
 
 [params]
 

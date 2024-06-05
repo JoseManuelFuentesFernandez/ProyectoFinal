@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c84ieu232xpo0"
-path="res://.godot/imported/Jump.png-d51640ddea69fc4a6b8bf4899b87f060.ctex"
+path="res://.godot/imported/Jump.png-52fba698757e02a5109bf6a6d3b4c5b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/Main/sprites&animations/Swordsman/Jump.png"
-dest_files=["res://.godot/imported/Jump.png-d51640ddea69fc4a6b8bf4899b87f060.ctex"]
+source_file="res://personajes/main/sprites&animations/Swordsman/Jump.png"
+dest_files=["res://.godot/imported/Jump.png-52fba698757e02a5109bf6a6d3b4c5b4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbxs0kgbkqesv"
-path="res://.godot/imported/Hurt.png-fd1b4d5863ca4199e0f813d7d888cbd1.ctex"
+path="res://.godot/imported/Hurt.png-f45ea579a7c35a2573f2529003499a31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/Main/sprites&animations/Wizard/Hurt.png"
-dest_files=["res://.godot/imported/Hurt.png-fd1b4d5863ca4199e0f813d7d888cbd1.ctex"]
+source_file="res://personajes/main/sprites&animations/Wizard/Hurt.png"
+dest_files=["res://.godot/imported/Hurt.png-f45ea579a7c35a2573f2529003499a31.ctex"]
 
 [params]
 
