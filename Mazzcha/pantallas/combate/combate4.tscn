@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bf7yxq3c26c68"]
+
+[ext_resource type="Texture2D" uid="uid://beauuy7a5awjs" path="res://pantallas/mazmorras/Battleground4/Bright/Battleground2.png" id="1_spoe3"]
+[ext_resource type="PackedScene" uid="uid://1u8fu60wg640" path="res://personajes/Main/characters/main_character.tscn" id="2_avung"]
+[ext_resource type="PackedScene" uid="uid://hrcfccchdnfw" path="res://personajes/Enemigos/King/enemy_king.tscn" id="3_uv7vj"]
+
+[node name="Combate4" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+show_behind_parent = true
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_spoe3")
+
+[node name="MainCharacter" parent="." instance=ExtResource("2_avung")]
+position = Vector2(501, 659)
+slide_on_ceiling = false
+
+[node name="EnemyKing" parent="." instance=ExtResource("3_uv7vj")]
+texture_filter = 1
+position = Vector2(1443, 717)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

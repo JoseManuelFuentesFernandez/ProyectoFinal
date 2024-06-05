@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crcklhjykd4gg"
-path="res://.godot/imported/Hurt.png-3a1e8dff427ad1c8f064b5b5f94dd49f.ctex"
+path="res://.godot/imported/Hurt.png-9db70ec984588968dad349d002d3fa81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/main/sprites&animations/Swordsman/Hurt.png"
-dest_files=["res://.godot/imported/Hurt.png-3a1e8dff427ad1c8f064b5b5f94dd49f.ctex"]
+source_file="res://personajes/Main/sprites&animations/Swordsman/Hurt.png"
+dest_files=["res://.godot/imported/Hurt.png-9db70ec984588968dad349d002d3fa81.ctex"]
 
 [params]
 

@@ -12,3 +12,4 @@ func _process(delta):
 
 func _startAnimation():
 	play("idle_swordman")
+

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce4f6iybyhn8v"
-path="res://.godot/imported/Run.png-f41869e7cb56a30963cd683cac576bad.ctex"
+path="res://.godot/imported/Run.png-95b5aecc9a03991578143688d4b7ae2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/main/sprites&animations/Swordsman/Run.png"
-dest_files=["res://.godot/imported/Run.png-f41869e7cb56a30963cd683cac576bad.ctex"]
+source_file="res://personajes/Main/sprites&animations/Swordsman/Run.png"
+dest_files=["res://.godot/imported/Run.png-95b5aecc9a03991578143688d4b7ae2a.ctex"]
 
 [params]
 

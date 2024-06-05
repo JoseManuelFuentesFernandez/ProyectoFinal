@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyc1ytj0tfn6q"
-path="res://.godot/imported/Attack_1.png-f2d6368f76adbfdeea4a68eba5516f8a.ctex"
+path="res://.godot/imported/Attack_1.png-a722081c67aa78bef94fd520b8c6c6fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/main/sprites&animations/Archer/Attack_1.png"
-dest_files=["res://.godot/imported/Attack_1.png-f2d6368f76adbfdeea4a68eba5516f8a.ctex"]
+source_file="res://personajes/Main/sprites&animations/Archer/Attack_1.png"
+dest_files=["res://.godot/imported/Attack_1.png-a722081c67aa78bef94fd520b8c6c6fb.ctex"]
 
 [params]
 

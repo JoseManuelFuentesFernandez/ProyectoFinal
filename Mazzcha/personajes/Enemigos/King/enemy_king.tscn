@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://hrcfccchdnfw"]
+
+[ext_resource type="Texture2D" uid="uid://ddj3odl4oo0ul" path="res://personajes/Enemigos/King/idle/tile000.png" id="1_h7kkg"]
+[ext_resource type="Texture2D" uid="uid://brvbp7yrj7yri" path="res://personajes/Enemigos/King/idle/tile001.png" id="2_nu0hh"]
+[ext_resource type="Script" path="res://personajes/Enemigos/King/AnimatedSprite2D.gd" id="3_kssm5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ptg6"]
+animations = [{
+"frames": [{
+"duration": 1.6,
+"texture": ExtResource("1_h7kkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nu0hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_h7kkg")
+}],
+"loop": true,
+"name": &"idle_king",
+"speed": 5.0
+}]
+
+[node name="EnemyKing" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_8ptg6")
+animation = &"idle_king"
+speed_scale = 0.7
+flip_h = true
+script = ExtResource("3_kssm5")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -119.0
+offset_top = 119.0
+offset_right = 118.0
+offset_bottom = 154.0
+grow_horizontal = 2
+value = 100.0

@@ -1,10 +1,26 @@
-[gd_scene load_steps=6 format=3 uid="uid://biytsr2qxp38m"]
+[gd_scene load_steps=7 format=3 uid="uid://biytsr2qxp38m"]
 
 [ext_resource type="Texture2D" uid="uid://bkoyo41kjnjjv" path="res://pantallas/mazmorras/Battleground1/Bright/Battleground1_thumb.png" id="1_1wh4g"]
 [ext_resource type="Script" path="res://pantallas/seleccion_mazmorras/ScrollContainer.gd" id="1_pr375"]
 [ext_resource type="Texture2D" uid="uid://cg1nj4qgsn5ko" path="res://pantallas/mazmorras/Battleground2/Bright/Battleground4_thumb.png" id="2_rfysp"]
 [ext_resource type="Texture2D" uid="uid://bxu3i4wt8lie5" path="res://pantallas/mazmorras/Battleground3/background3_thumbnail.png" id="3_xnsht"]
 [ext_resource type="Texture2D" uid="uid://b7qm1mfdlma2r" path="res://pantallas/mazmorras/Battleground4/Bright/Battleground2_thumbnail.png" id="4_0eg2x"]
+
+[sub_resource type="GDScript" id="GDScript_kqn3x"]
+script/source = "extends TextureRect
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+"
 
 [node name="SeleccionMundo" type="Control"]
 layout_mode = 3
@@ -45,18 +61,25 @@ theme_override_constants/separation = 100
 
 [node name="Maz1" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
+mouse_default_cursor_shape = 2
 texture = ExtResource("1_1wh4g")
 expand_mode = 3
+script = SubResource("GDScript_kqn3x")
 
 [node name="Maz2" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
+mouse_default_cursor_shape = 2
 texture = ExtResource("2_rfysp")
 
 [node name="Maz3" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
+mouse_default_cursor_shape = 2
 texture = ExtResource("3_xnsht")
 expand_mode = 3
 
 [node name="Maz4" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
+mouse_default_cursor_shape = 2
 texture = ExtResource("4_0eg2x")
+
+[connection signal="gui_input" from="ScrollContainer" to="ScrollContainer" method="_on_ScrollContainer_gui_input"]
