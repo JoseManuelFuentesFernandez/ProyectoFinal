@@ -24,7 +24,7 @@ func _on_atk_2_pressed():
 	pass # Replace with function body
 
 func _on_ability_pressed():
-	pass # Replace with function body
+	main_character._hurt()
 
 func _on_scape_pressed():
 	get_tree().change_scene_to_file("res://pantallas/menu/MenuPrincipal.tscn")

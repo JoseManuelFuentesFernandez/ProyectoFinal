@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://1u8fu60wg640"]
+[gd_scene load_steps=29 format=3 uid="uid://1u8fu60wg640"]
 
 [ext_resource type="Script" path="res://personajes/main/characters/main_character.gd" id="1_gmolb"]
 [ext_resource type="Texture2D" uid="uid://hcca3mokvh2c" path="res://personajes/main/sprites&animations/Swordsman/idle (1).png" id="1_rftih"]
@@ -14,6 +14,12 @@
 [ext_resource type="Texture2D" uid="uid://dbewiv5giw8ok" path="res://personajes/main/sprites&animations/Swordsman/idle (7).png" id="7_hhft4"]
 [ext_resource type="Texture2D" uid="uid://dhwp8d1ayes2p" path="res://personajes/main/sprites&animations/Swordsman/idle (8).png" id="8_b5nsa"]
 [ext_resource type="Texture2D" uid="uid://bmey0ayjc5eso" path="res://personajes/main/sprites&animations/Swordsman/atk1 (1).png" id="8_ym4i3"]
+[ext_resource type="Texture2D" uid="uid://bb4iyt6i05tua" path="res://personajes/main/sprites&animations/Swordsman/death (2).png" id="9_0pj6f"]
+[ext_resource type="Texture2D" uid="uid://cq0bwuwgsuq0n" path="res://personajes/main/sprites&animations/Swordsman/death (3).png" id="10_2mgd0"]
+[ext_resource type="Texture2D" uid="uid://u82ujdkgj1wr" path="res://personajes/main/sprites&animations/Swordsman/death (1).png" id="11_vbg0x"]
+[ext_resource type="Texture2D" uid="uid://brcxysosdojv4" path="res://personajes/main/sprites&animations/Swordsman/hurt (2).png" id="12_ga1c1"]
+[ext_resource type="Texture2D" uid="uid://dqiswubm16fnc" path="res://personajes/main/sprites&animations/Swordsman/hurt (3).png" id="13_fj4ea"]
+[ext_resource type="Texture2D" uid="uid://cpea2wu61b75k" path="res://personajes/main/sprites&animations/Swordsman/hurt (1).png" id="14_xov1q"]
 
 [sub_resource type="Animation" id="Animation_1x5un"]
 length = 0.001
@@ -54,9 +60,35 @@ resource_name = "atk2_swordman"
 
 [sub_resource type="Animation" id="Animation_6x2b1"]
 resource_name = "death"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.7, 1.8, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("9_0pj6f"), ExtResource("10_2mgd0"), ExtResource("11_vbg0x")]
+}
 
 [sub_resource type="Animation" id="Animation_374ya"]
 resource_name = "swordman_hurt"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("12_ga1c1"), ExtResource("13_fj4ea"), ExtResource("14_xov1q")]
+}
 
 [sub_resource type="Animation" id="Animation_undp3"]
 length = 2.4
