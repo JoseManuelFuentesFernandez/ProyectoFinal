@@ -1,7 +1,6 @@
 extends ScrollContainer
 
-
-@export var card_scale = 1 # (float, 0.5, 1, 0.1)
+@export var card_scale = 1.0 # (float, 0.5, 1, 0.1)
 @export var card_current_scale = 1.3 # (float, 1, 1.5, 0.1)
 @export var scroll_duration = 1.3 # (float, 0.1, 1, 0.1)
 
@@ -13,15 +12,27 @@ var card_x_positions: Array = []
 @onready var card_space: int = $CenterContainer/MarginContainer/HBoxContainer.get("theme_override_constants/separation")
 @onready var card_nodes: Array = $CenterContainer/MarginContainer/HBoxContainer.get_children()
 
+signal change_background(bg_type: String)
 
-func _ready() -> void:	
-	get_h_scroll_bar().modulate.a = 0	
+func _ready() -> void:    
+	get_h_scroll_bar().modulate.a = 0    
 	call_deferred("_set_initial_positions")
-		
-	
-func _set_initial_positions()->void:
+
+	for card in card_nodes:
+		card.connect("pressed", Callable(self, "_on_card_pressed"))
+
+
+func _on_card_pressed(card_pressed): 
+	print("Card pressed:", card_pressed)
+	var index = card_nodes.find(card_pressed)
+	if index >= 0:
+		card_current_index = index
+		scroll()
+		navigate_to_combat(card_current_index)
+
+func _set_initial_positions() -> void:
 	for _card in card_nodes:
-		var _card_pos_x: float = (margin_r + _card.position.x) - ((size.x - _card.size.x) / 2)		
+		var _card_pos_x: float = (margin_r + _card.position.x) - ((size.x - _card.size.x) / 2)        
 		_card.pivot_offset = (_card.size / 2)
 		card_x_positions.append(_card_pos_x)
 	scroll_horizontal = card_x_positions[card_current_index]
@@ -44,8 +55,7 @@ func _process(delta: float) -> void:
 		if _swipe_current_length < _swipe_length:
 			card_current_index = _index
 
-
-func scroll() -> void:	
+func scroll() -> void:    
 	scroll_tween = create_tween().set_parallel(true)
 	scroll_tween.tween_property(
 		self,
@@ -59,9 +69,7 @@ func scroll() -> void:
 			card_nodes[_index],
 			"scale",
 			Vector2(_card_scale,_card_scale),
-			scroll_duration,).from(card_nodes[_index].scale).set_trans(scroll_tween.TRANS_QUAD).set_ease(scroll_tween.EASE_OUT)
-			
-
+			scroll_duration).from(card_nodes[_index].scale).set_trans(scroll_tween.TRANS_QUAD).set_ease(scroll_tween.EASE_OUT)
 
 func _on_ScrollContainer_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
@@ -69,3 +77,18 @@ func _on_ScrollContainer_gui_input(event: InputEvent) -> void:
 			scroll_tween.stop()
 		else:
 			scroll()
+
+func _on_card_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.is_pressed():
+		for index in range(card_nodes.size()):
+			if card_nodes[index].get_global_rect().has_point(event.position):
+				card_current_index = index
+				scroll()
+				navigate_to_combat(card_current_index) # Pasar el índice correcto
+				break
+
+func navigate_to_combat(index: int) -> void:
+	var bg_type = "bg" + str(index + 1) # Añadir 1 al índice para coincidir con la numeración de los fondos
+	print("Navigating to combat with background:", bg_type)
+	emit_signal("change_background", bg_type)
+	get_tree().change_scene_to_file("res://pantallas/combate/combate.tscn")
