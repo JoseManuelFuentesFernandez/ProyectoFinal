@@ -14,7 +14,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
+[node name="MenuSelectorMundo" type="ScrollContainer" parent="."]
 clip_contents = false
 layout_mode = 1
 anchors_preset = 15
@@ -24,45 +24,45 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pr375")
 
-[node name="CenterContainer" type="CenterContainer" parent="ScrollContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="MenuSelectorMundo"]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
 mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/CenterContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MenuSelectorMundo/CenterContainer"]
 layout_mode = 2
 mouse_filter = 2
 theme_override_constants/margin_left = 725
 theme_override_constants/margin_right = 750
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/CenterContainer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuSelectorMundo/CenterContainer/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
 mouse_filter = 2
 theme_override_constants/separation = 100
 
-[node name="Maz1" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+[node name="Maz1" type="TextureRect" parent="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 texture = ExtResource("1_1wh4g")
 expand_mode = 3
 
-[node name="Maz2" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+[node name="Maz2" type="TextureRect" parent="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 texture = ExtResource("2_rfysp")
 
-[node name="Maz3" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+[node name="Maz3" type="TextureRect" parent="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 texture = ExtResource("3_xnsht")
 expand_mode = 3
 
-[node name="Maz4" type="TextureRect" parent="ScrollContainer/CenterContainer/MarginContainer/HBoxContainer"]
+[node name="Maz4" type="TextureRect" parent="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 texture = ExtResource("4_0eg2x")
 
-[connection signal="gui_input" from="ScrollContainer" to="ScrollContainer" method="_on_ScrollContainer_gui_input"]
+[connection signal="gui_input" from="MenuSelectorMundo" to="MenuSelectorMundo" method="_on_ScrollContainer_gui_input"]
