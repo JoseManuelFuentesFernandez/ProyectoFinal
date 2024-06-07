@@ -1,0 +1,133 @@
+[gd_scene load_steps=26 format=3 uid="uid://c8g8a1u4mmju0"]
+
+[ext_resource type="Texture2D" uid="uid://cps7ybtd4km7p" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_idle_1.png" id="1_dyw8o"]
+[ext_resource type="Texture2D" uid="uid://chgv3ubwx3psg" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_takehit_1.png" id="2_ux63t"]
+[ext_resource type="Texture2D" uid="uid://cv32acobol36e" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_idle_2.png" id="2_w1s1m"]
+[ext_resource type="Texture2D" uid="uid://c2k7j34b6te6h" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_takehit_2.png" id="3_1lbgy"]
+[ext_resource type="Texture2D" uid="uid://duxx81y8ytovu" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_idle_3.png" id="3_aos02"]
+[ext_resource type="Texture2D" uid="uid://bherae2n45d8e" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_takehit_3.png" id="4_632sr"]
+[ext_resource type="Texture2D" uid="uid://dp3ksepxnvmfg" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_idle_4.png" id="4_yhed1"]
+[ext_resource type="Texture2D" uid="uid://ccel0p33k8w5i" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_takehit_4.png" id="5_6mc4d"]
+[ext_resource type="Texture2D" uid="uid://dy4r2br4u6rse" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_idle_5.png" id="5_j7egy"]
+[ext_resource type="Texture2D" uid="uid://hll0ymmulyf6" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_attack_5.png" id="6_0yiom"]
+[ext_resource type="Texture2D" uid="uid://cwbbwb61wymeb" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_attack_1.png" id="7_q2f1o"]
+[ext_resource type="Texture2D" uid="uid://ci6p7wy68urwe" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_attack_4.png" id="8_wp0un"]
+[ext_resource type="Texture2D" uid="uid://8do57b2vq4ye" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_attack_3.png" id="9_pbkgc"]
+[ext_resource type="Texture2D" uid="uid://bgj8ea6w5m8hl" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_die_1.png" id="14_5exr4"]
+[ext_resource type="Texture2D" uid="uid://c6s3u5fctcpor" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_die_2.png" id="15_o5bjs"]
+[ext_resource type="Texture2D" uid="uid://dmfrnkduty5wt" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_die_3.png" id="16_85efo"]
+[ext_resource type="Texture2D" uid="uid://j2836m6f53rw" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_die_4.png" id="17_8vyvg"]
+[ext_resource type="Texture2D" uid="uid://bx6au5saa4vhh" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_die_5.png" id="18_igvlt"]
+[ext_resource type="Texture2D" uid="uid://cf856a75y6ryi" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_die_6.png" id="19_hc0tr"]
+
+[sub_resource type="Animation" id="Animation_xm23i"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_dyw8o")]
+}
+
+[sub_resource type="Animation" id="Animation_vh1ln"]
+resource_name = "enemy1_hurt"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 0.6, 0.9, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_ux63t"), ExtResource("3_1lbgy"), ExtResource("4_632sr"), ExtResource("5_6mc4d")]
+}
+
+[sub_resource type="Animation" id="Animation_ns1u0"]
+resource_name = "atk_enemy1"
+length = 2.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 1, 1.1, 1.3, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_q2f1o"), ExtResource("8_wp0un"), ExtResource("9_pbkgc"), ExtResource("8_wp0un"), ExtResource("6_0yiom")]
+}
+
+[sub_resource type="Animation" id="Animation_12gno"]
+resource_name = "idle_enemy1"
+length = 1.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_dyw8o"), ExtResource("2_w1s1m"), ExtResource("3_aos02"), ExtResource("4_yhed1"), ExtResource("5_j7egy")]
+}
+
+[sub_resource type="Animation" id="Animation_hak2r"]
+resource_name = "enemy1_death"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 0.8, 1.4, 1.9, 2.4, 2.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("14_5exr4"), ExtResource("15_o5bjs"), ExtResource("16_85efo"), ExtResource("17_8vyvg"), ExtResource("18_igvlt"), ExtResource("19_hc0tr")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_on88y"]
+_data = {
+"RESET": SubResource("Animation_xm23i"),
+"enemy1_atk": SubResource("Animation_ns1u0"),
+"enemy1_death": SubResource("Animation_hak2r"),
+"enemy1_hurt": SubResource("Animation_vh1ln"),
+"enemy1_idle": SubResource("Animation_12gno")
+}
+
+[node name="Enemy1" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_dyw8o")
+flip_h = true
+
+[node name="health_bar" type="ProgressBar" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -119.0
+offset_top = 119.0
+offset_right = 118.0
+offset_bottom = 154.0
+grow_horizontal = 2
+value = 100.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_on88y")
+}

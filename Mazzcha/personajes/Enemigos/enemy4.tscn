@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://hrcfccchdnfw"]
+
+[ext_resource type="Script" path="res://personajes/Enemigos/enemy4.gd" id="1_gy74a"]
+[ext_resource type="Texture2D" uid="uid://ddj3odl4oo0ul" path="res://personajes/Enemigos/King/idle/tile000.png" id="1_h7kkg"]
+[ext_resource type="Texture2D" uid="uid://brvbp7yrj7yri" path="res://personajes/Enemigos/King/idle/tile001.png" id="2_nu0hh"]
+
+[sub_resource type="Animation" id="Animation_f26j7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_h7kkg")]
+}
+
+[sub_resource type="Animation" id="Animation_t523t"]
+resource_name = "idle_king"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("1_h7kkg"), ExtResource("2_nu0hh")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g1npq"]
+_data = {
+"RESET": SubResource("Animation_f26j7"),
+"idle_king": SubResource("Animation_t523t")
+}
+
+[node name="Enemy4" type="CharacterBody2D"]
+script = ExtResource("1_gy74a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(8, 8)
+texture = ExtResource("1_h7kkg")
+flip_h = true
+
+[node name="health_bar" type="ProgressBar" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -119.0
+offset_top = 119.0
+offset_right = 118.0
+offset_bottom = 154.0
+grow_horizontal = 2
+value = 100.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite2D")
+libraries = {
+"": SubResource("AnimationLibrary_g1npq")
+}

@@ -32,12 +32,13 @@ func _atk1() -> int:
 	
 func _hurt() -> int:
 	animation_player.play("swordman_hurt")
-	
 	return health
 	
 func _on_animation_finished(anim_name: String):
-	if anim_name == "swordman_atk1":
-		animation_player.play("swordman_idle")
-		
 	if anim_name == "swordman_hurt" && health <= 0:
 		animation_player.play("swordman_death")
+		
+	if anim_name == "swordman_atk1" || anim_name == "swordman_atk2" || anim_name == "swordman_ability" || anim_name == "swordman_hurt" :
+		animation_player.play("swordman_idle")
+		
+	

@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://c35fvf34kg7xc"]
+
+[ext_resource type="Texture2D" uid="uid://cl1f6feyj4sve" path="res://pantallas/mazmorras/Battleground3/background3.png" id="1_e8xcg"]
+[ext_resource type="PackedScene" uid="uid://1u8fu60wg640" path="res://personajes/main/characters/main_character.tscn" id="2_yy0f2"]
+
+[node name="Combate3" type="Node2D"]
+
+[node name="bg3" type="TextureRect" parent="."]
+show_behind_parent = true
+offset_right = 896.0
+offset_bottom = 1078.0
+texture = ExtResource("1_e8xcg")
+expand_mode = 3
+
+[node name="MainCharacter" parent="." instance=ExtResource("2_yy0f2")]
+position = Vector2(565, 673)
+slide_on_ceiling = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="options" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 27.0
+offset_top = -312.0
+offset_right = 156.0
+offset_bottom = -176.0
+grow_vertical = 0
+scale = Vector2(2, 2)
+
+[node name="atk1" type="Button" parent="CanvasLayer/options"]
+layout_mode = 2
+text = "Ataque básico"
+
+[node name="atk2" type="Button" parent="CanvasLayer/options"]
+layout_mode = 2
+text = "Ataque potente"
+
+[node name="ability" type="Button" parent="CanvasLayer/options"]
+layout_mode = 2
+text = "Habilidad"
+
+[node name="scape" type="Button" parent="CanvasLayer/options"]
+layout_mode = 2
+text = "Huir"
