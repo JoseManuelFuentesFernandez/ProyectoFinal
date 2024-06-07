@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cvjicuegv5v6d"]
+[gd_scene load_steps=4 format=3 uid="uid://cvjicuegv5v6d"]
 
 [ext_resource type="Texture2D" uid="uid://dsvvimit20ioe" path="res://pantallas/mazmorras/Battleground1/Bright/Battleground1.png" id="1_lg30o"]
 [ext_resource type="PackedScene" uid="uid://1u8fu60wg640" path="res://personajes/main/characters/main_character.tscn" id="2_epkx5"]
+[ext_resource type="PackedScene" uid="uid://c8g8a1u4mmju0" path="res://personajes/Enemigos/enemy1.tscn" id="3_krd7f"]
 
 [node name="Combate1" type="Node2D"]
 
@@ -15,6 +16,9 @@ expand_mode = 3
 [node name="MainCharacter" parent="." instance=ExtResource("2_epkx5")]
 position = Vector2(565, 673)
 slide_on_ceiling = false
+
+[node name="Enemy1" parent="." instance=ExtResource("3_krd7f")]
+position = Vector2(1387, 669)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
