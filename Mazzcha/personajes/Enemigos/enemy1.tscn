@@ -1,6 +1,7 @@
-[gd_scene load_steps=26 format=3 uid="uid://c8g8a1u4mmju0"]
+[gd_scene load_steps=27 format=3 uid="uid://c8g8a1u4mmju0"]
 
 [ext_resource type="Texture2D" uid="uid://cps7ybtd4km7p" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_idle_1.png" id="1_dyw8o"]
+[ext_resource type="Script" path="res://personajes/Enemigos/enemy1.gd" id="1_r4j5k"]
 [ext_resource type="Texture2D" uid="uid://chgv3ubwx3psg" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_takehit_1.png" id="2_ux63t"]
 [ext_resource type="Texture2D" uid="uid://cv32acobol36e" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_idle_2.png" id="2_w1s1m"]
 [ext_resource type="Texture2D" uid="uid://c2k7j34b6te6h" path="res://personajes/Enemigos/cultist_priest_sprite_pack/cultist_priest_takehit_2.png" id="3_1lbgy"]
@@ -110,6 +111,7 @@ _data = {
 }
 
 [node name="Enemy1" type="CharacterBody2D"]
+script = ExtResource("1_r4j5k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
