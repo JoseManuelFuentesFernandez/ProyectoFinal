@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d18isnmqkntkb"
-path="res://.godot/imported/tile003.png-718a667a0c5888d3f1556360ddfa0a36.ctex"
+uid="uid://ch6e2t1nejf5i"
+path="res://.godot/imported/tile005.png-313654b0d5e6ae88f166e7e6b6b40344.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/Enemigos/minotaur/atk1/tile003.png"
-dest_files=["res://.godot/imported/tile003.png-718a667a0c5888d3f1556360ddfa0a36.ctex"]
+source_file="res://personajes/Enemigos/King/hurt/tile005.png"
+dest_files=["res://.godot/imported/tile005.png-313654b0d5e6ae88f166e7e6b6b40344.ctex"]
 
 [params]
 

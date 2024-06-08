@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d18isnmqkntkb"
-path="res://.godot/imported/tile003.png-718a667a0c5888d3f1556360ddfa0a36.ctex"
+uid="uid://b0kl7f8ps6565"
+path="res://.godot/imported/tile005.png-0fa31cdca10a0dd39f416f8e83ebfefa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/Enemigos/minotaur/atk1/tile003.png"
-dest_files=["res://.godot/imported/tile003.png-718a667a0c5888d3f1556360ddfa0a36.ctex"]
+source_file="res://personajes/Enemigos/minotaur/atk3/tile005.png"
+dest_files=["res://.godot/imported/tile005.png-0fa31cdca10a0dd39f416f8e83ebfefa.ctex"]
 
 [params]
 
