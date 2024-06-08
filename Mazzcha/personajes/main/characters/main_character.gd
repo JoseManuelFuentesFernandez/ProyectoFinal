@@ -8,19 +8,16 @@ const base_atk = config.Config.swordman_base_atk
 const base_armor = config.Config.swordman_base_armor
 const base_health = config.Config.swordman_base_health
 
-var atk : int 
+var atk : int
 var armor : int
-var health : float:
-	set(value):
-		health = value
-		_update_progress_bar()
+var _health : float
 
 func _ready():
 	var level_multiplier = data.level
 	atk = base_atk * level_multiplier
 	armor = base_armor * level_multiplier
 	health = base_health * level_multiplier
-	
+
 	animation_player.connect("animation_finished", Callable(self, "_on_animation_finished"))
 	animation_player.play("swordman_idle")
 	_update_progress_bar()
@@ -34,7 +31,7 @@ func _atk1() -> int:
 
 func _atk2() -> int:
 	animation_player.play("swordman_atk2")
-	return atk
+	return atk*1.5
 
 func _ability() -> int:
 	animation_player.play("swordman_ability")
@@ -51,6 +48,17 @@ func _hurt(damage: int):
 
 func _on_animation_finished(anim_name: String):
 	if anim_name == "swordman_death":
-		queue_free()
+		animation_player.pause()
 	elif anim_name in ["swordman_atk1", "swordman_atk2", "swordman_ability", "swordman_hurt"]:
 		animation_player.play("swordman_idle")
+
+func set_health(value):
+	_health = value
+	_update_progress_bar()
+
+func get_health():
+	return _health
+
+var health : float:
+	get = get_health,
+	set = set_health

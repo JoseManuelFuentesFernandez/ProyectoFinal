@@ -1,9 +1,7 @@
-[gd_scene load_steps=142 format=3 uid="uid://hrcfccchdnfw"]
+[gd_scene load_steps=140 format=3 uid="uid://hrcfccchdnfw"]
 
 [ext_resource type="Script" path="res://personajes/Enemigos/enemy4.gd" id="1_gy74a"]
-[ext_resource type="Texture2D" uid="uid://ddj3odl4oo0ul" path="res://personajes/Enemigos/King/idle/tile000.png" id="1_h7kkg"]
 [ext_resource type="Texture2D" uid="uid://dbf54qa4omwnn" path="res://personajes/Enemigos/King/atk2/tile000.png" id="2_01d8q"]
-[ext_resource type="Texture2D" uid="uid://brvbp7yrj7yri" path="res://personajes/Enemigos/King/idle/tile001.png" id="2_nu0hh"]
 [ext_resource type="Texture2D" uid="uid://lcihouf2wqpm" path="res://personajes/Enemigos/King/death/tile000.png" id="3_dc7fd"]
 [ext_resource type="Texture2D" uid="uid://y1uvjxvd7cu8" path="res://personajes/Enemigos/King/death/tile001.png" id="4_n4suf"]
 [ext_resource type="Texture2D" uid="uid://mskpof67ats2" path="res://personajes/Enemigos/King/death/tile002.png" id="5_xhxmm"]
@@ -41,12 +39,12 @@
 [ext_resource type="Texture2D" uid="uid://2w7fkv1t33fm" path="res://personajes/Enemigos/King/death/tile034.png" id="37_gpknk"]
 [ext_resource type="Texture2D" uid="uid://ddwii57scrar1" path="res://personajes/Enemigos/King/death/tile035.png" id="38_7dctk"]
 [ext_resource type="Texture2D" uid="uid://dkf8yys1ornrr" path="res://personajes/Enemigos/King/death/tile036.png" id="39_0oyho"]
-[ext_resource type="Texture2D" uid="uid://ddj3odl4oo0ul" path="res://personajes/Enemigos/King/hurt/tile000.png" id="41_qe8k8"]
-[ext_resource type="Texture2D" uid="uid://brvbp7yrj7yri" path="res://personajes/Enemigos/King/hurt/tile001.png" id="42_jpx2f"]
-[ext_resource type="Texture2D" uid="uid://bhrfdn6o8dgdn" path="res://personajes/Enemigos/King/hurt/tile002.png" id="43_im8rx"]
-[ext_resource type="Texture2D" uid="uid://wwye6v185dja" path="res://personajes/Enemigos/King/hurt/tile003.png" id="44_0qybk"]
-[ext_resource type="Texture2D" uid="uid://b7s0c483m4gpn" path="res://personajes/Enemigos/King/hurt/tile004.png" id="45_7603v"]
-[ext_resource type="Texture2D" uid="uid://ch6e2t1nejf5i" path="res://personajes/Enemigos/King/hurt/tile005.png" id="46_fg5rw"]
+[ext_resource type="Texture2D" uid="uid://ddj3odl4oo0ul" path="res://personajes/Enemigos/King/idle/tile000.png" id="41_qe8k8"]
+[ext_resource type="Texture2D" uid="uid://brvbp7yrj7yri" path="res://personajes/Enemigos/King/idle/tile001.png" id="42_jpx2f"]
+[ext_resource type="Texture2D" uid="uid://bhrfdn6o8dgdn" path="res://personajes/Enemigos/King/idle/tile002.png" id="43_im8rx"]
+[ext_resource type="Texture2D" uid="uid://wwye6v185dja" path="res://personajes/Enemigos/King/idle/tile003.png" id="44_0qybk"]
+[ext_resource type="Texture2D" uid="uid://b7s0c483m4gpn" path="res://personajes/Enemigos/King/idle/tile004.png" id="45_7603v"]
+[ext_resource type="Texture2D" uid="uid://ch6e2t1nejf5i" path="res://personajes/Enemigos/King/idle/tile005.png" id="46_fg5rw"]
 [ext_resource type="Texture2D" uid="uid://d3mwhtsefkybe" path="res://personajes/Enemigos/King/atk/tile000.png" id="47_pl67q"]
 [ext_resource type="Texture2D" uid="uid://drheb4ghagven" path="res://personajes/Enemigos/King/atk2/tile001.png" id="48_017y7"]
 [ext_resource type="Texture2D" uid="uid://qxocs3ybxwwq" path="res://personajes/Enemigos/King/atk/tile001.png" id="48_rgdm0"]
@@ -150,66 +148,6 @@ tracks/0/keys = {
 "values": [ExtResource("2_01d8q")]
 }
 
-[sub_resource type="Animation" id="Animation_pfnol"]
-resource_name = "king_death"
-length = 3.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("3_dc7fd"), ExtResource("4_n4suf"), ExtResource("5_xhxmm"), ExtResource("6_1mara"), ExtResource("7_avtpd"), ExtResource("8_gm6jv"), ExtResource("9_n8xo7"), ExtResource("10_prbux"), ExtResource("11_rdt7m"), ExtResource("12_o176v"), ExtResource("13_n002a"), ExtResource("14_k7tqs"), ExtResource("15_nd03j"), ExtResource("16_ho8pl"), ExtResource("17_np1uc"), ExtResource("18_7u1ao"), ExtResource("19_1pshg"), ExtResource("20_3gjfq"), ExtResource("21_j6opp"), ExtResource("22_io4dq"), ExtResource("23_ploe7"), ExtResource("24_osw07"), ExtResource("25_yl3yh"), ExtResource("26_ba8wa"), ExtResource("27_dq8qc"), ExtResource("28_7sjk6"), ExtResource("29_knhwb"), ExtResource("30_k3ara"), ExtResource("31_ju1np"), ExtResource("32_kud82"), ExtResource("33_2pgka"), ExtResource("34_jq6qf"), ExtResource("35_c8pjq"), ExtResource("36_6ruwp"), ExtResource("37_gpknk"), ExtResource("38_7dctk"), ExtResource("39_0oyho")]
-}
-
-[sub_resource type="Animation" id="Animation_t523t"]
-resource_name = "idle_king"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [ExtResource("1_h7kkg"), ExtResource("2_nu0hh")]
-}
-
-[sub_resource type="Animation" id="Animation_ooji6"]
-resource_name = "king_hurt"
-length = 1.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8, 0.9, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("41_qe8k8"), ExtResource("42_jpx2f"), ExtResource("43_im8rx"), ExtResource("44_0qybk"), ExtResource("44_0qybk"), ExtResource("44_0qybk"), ExtResource("45_7603v"), ExtResource("46_fg5rw"), ExtResource("43_im8rx"), ExtResource("42_jpx2f")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:self_modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.4, 0.5, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(0.737255, 0, 0.0784314, 1), Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_ibuhw"]
 resource_name = "king_atk2"
 length = 2.9
@@ -240,6 +178,66 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("47_pl67q"), ExtResource("48_rgdm0"), ExtResource("49_8vddg"), ExtResource("50_mp5ra"), ExtResource("51_jbh8m"), ExtResource("52_l82xp"), ExtResource("53_h38im"), ExtResource("54_42ka0"), ExtResource("55_2xvl6"), ExtResource("56_udf8r"), ExtResource("57_bdm70"), ExtResource("58_luhri"), ExtResource("59_kf3d7"), ExtResource("60_6ycv4"), ExtResource("61_kox2d"), ExtResource("62_7ap6b"), ExtResource("63_7bo7e"), ExtResource("64_xh5im"), ExtResource("65_3hxaw"), ExtResource("66_ustnn"), ExtResource("67_apoxg"), ExtResource("68_2viqo"), ExtResource("69_tqp0s"), ExtResource("70_4pw10"), ExtResource("71_fb435"), ExtResource("72_vkqqs"), ExtResource("73_kdh44"), ExtResource("74_ty6p6"), ExtResource("75_62kgj"), ExtResource("76_kmp16"), ExtResource("77_wpmvu"), ExtResource("78_jedl6"), ExtResource("79_1auac"), ExtResource("80_yhuth"), ExtResource("81_5mpb2"), ExtResource("82_ipgq8"), ExtResource("83_63ff6"), ExtResource("84_cdeah"), ExtResource("85_ves5c"), ExtResource("86_yyybn"), ExtResource("87_8xios"), ExtResource("88_l0i2t"), ExtResource("89_egiw7"), ExtResource("90_nflbh"), ExtResource("91_i27d5"), ExtResource("92_qm5ef"), ExtResource("93_mrej6"), ExtResource("94_7jhw0"), ExtResource("95_enojc"), ExtResource("96_pjpu3"), ExtResource("97_64ptx"), ExtResource("98_7455h"), ExtResource("99_c25dh"), ExtResource("100_mnn4w"), ExtResource("101_m3dkj"), ExtResource("102_vrbps"), ExtResource("103_aat1x"), ExtResource("104_p1c1y")]
+}
+
+[sub_resource type="Animation" id="Animation_pfnol"]
+resource_name = "king_death"
+length = 3.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_dc7fd"), ExtResource("4_n4suf"), ExtResource("5_xhxmm"), ExtResource("6_1mara"), ExtResource("7_avtpd"), ExtResource("8_gm6jv"), ExtResource("9_n8xo7"), ExtResource("10_prbux"), ExtResource("11_rdt7m"), ExtResource("12_o176v"), ExtResource("13_n002a"), ExtResource("14_k7tqs"), ExtResource("15_nd03j"), ExtResource("16_ho8pl"), ExtResource("17_np1uc"), ExtResource("18_7u1ao"), ExtResource("19_1pshg"), ExtResource("20_3gjfq"), ExtResource("21_j6opp"), ExtResource("22_io4dq"), ExtResource("23_ploe7"), ExtResource("24_osw07"), ExtResource("25_yl3yh"), ExtResource("26_ba8wa"), ExtResource("27_dq8qc"), ExtResource("28_7sjk6"), ExtResource("29_knhwb"), ExtResource("30_k3ara"), ExtResource("31_ju1np"), ExtResource("32_kud82"), ExtResource("33_2pgka"), ExtResource("34_jq6qf"), ExtResource("35_c8pjq"), ExtResource("36_6ruwp"), ExtResource("37_gpknk"), ExtResource("38_7dctk"), ExtResource("39_0oyho")]
+}
+
+[sub_resource type="Animation" id="Animation_ooji6"]
+resource_name = "king_hurt"
+length = 1.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.3, 1.4, 1.5, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("41_qe8k8"), ExtResource("42_jpx2f"), ExtResource("43_im8rx"), ExtResource("44_0qybk"), ExtResource("44_0qybk"), ExtResource("44_0qybk"), ExtResource("45_7603v"), ExtResource("46_fg5rw"), ExtResource("43_im8rx"), ExtResource("42_jpx2f")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 1.1, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.737255, 0, 0.0784314, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_t523t"]
+resource_name = "idle_king"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("41_qe8k8"), ExtResource("42_jpx2f")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g1npq"]

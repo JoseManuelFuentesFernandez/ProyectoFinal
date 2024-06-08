@@ -109,7 +109,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_374ya"]
 resource_name = "swordman_hurt"
-length = 0.5
+length = 3.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -117,7 +117,7 @@ tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
+"times": PackedFloat32Array(1.7, 1.9, 2.1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [ExtResource("12_ga1c1"), ExtResource("13_fj4ea"), ExtResource("14_xov1q")]

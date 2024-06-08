@@ -1,19 +1,16 @@
 extends CharacterBody2D
 
 @onready var sprite = $Sprite2D
-@onready var health_bar = $HealthBar
+@onready var health_bar = $health_bar
 @onready var animation_player = $AnimationPlayer
 
 const base_atk = config.Config.enemy4_atk
 const base_armor = config.Config.enemy4_armor
 const base_health = config.Config.enemy4_health
 
-var atk : int 
+var atk : int
 var armor : int
-var health : float:
-	set(value):
-		health = value
-		_update_progress_bar()
+var _health : float
 
 func _ready():
 	atk = base_atk
@@ -33,11 +30,7 @@ func _atk1() -> int:
 	
 func _atk2() -> int:
 	animation_player.play("king_atk2")
-	return atk
-
-func _ability() -> int:
-	animation_player.play("king_ability")
-	return atk
+	return atk*1.5
 
 func _hurt(damage: int):
 	health -= damage
@@ -50,6 +43,17 @@ func _hurt(damage: int):
 
 func _on_animation_finished(anim_name: String):
 	if anim_name == "king_death":
-		queue_free()
-	elif anim_name in ["king_atk", "king_ability", "king_hurt"]:
+		pass
+	elif anim_name in ["king_atk", "king_atk2", "king_hurt"]:
 		animation_player.play("king_idle")
+
+func set_health(value):
+	_health = value
+	_update_progress_bar()
+
+func get_health():
+	return _health
+
+var health : float:
+	get = get_health,
+	set = set_health

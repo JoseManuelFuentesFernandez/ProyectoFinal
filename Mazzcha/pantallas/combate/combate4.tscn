@@ -20,7 +20,7 @@ slide_on_ceiling = false
 
 [node name="enemy4" parent="." instance=ExtResource("4_f1be3")]
 texture_filter = 1
-position = Vector2(1319, 685)
+position = Vector2(1309, 695)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
