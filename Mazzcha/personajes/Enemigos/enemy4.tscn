@@ -1,8 +1,139 @@
-[gd_scene load_steps=7 format=3 uid="uid://hrcfccchdnfw"]
+[gd_scene load_steps=142 format=3 uid="uid://hrcfccchdnfw"]
 
 [ext_resource type="Script" path="res://personajes/Enemigos/enemy4.gd" id="1_gy74a"]
 [ext_resource type="Texture2D" uid="uid://ddj3odl4oo0ul" path="res://personajes/Enemigos/King/idle/tile000.png" id="1_h7kkg"]
+[ext_resource type="Texture2D" uid="uid://dbf54qa4omwnn" path="res://personajes/Enemigos/King/atk2/tile000.png" id="2_01d8q"]
 [ext_resource type="Texture2D" uid="uid://brvbp7yrj7yri" path="res://personajes/Enemigos/King/idle/tile001.png" id="2_nu0hh"]
+[ext_resource type="Texture2D" uid="uid://lcihouf2wqpm" path="res://personajes/Enemigos/King/death/tile000.png" id="3_dc7fd"]
+[ext_resource type="Texture2D" uid="uid://y1uvjxvd7cu8" path="res://personajes/Enemigos/King/death/tile001.png" id="4_n4suf"]
+[ext_resource type="Texture2D" uid="uid://mskpof67ats2" path="res://personajes/Enemigos/King/death/tile002.png" id="5_xhxmm"]
+[ext_resource type="Texture2D" uid="uid://585uptsiy4yl" path="res://personajes/Enemigos/King/death/tile003.png" id="6_1mara"]
+[ext_resource type="Texture2D" uid="uid://co2mbbmhyj1ne" path="res://personajes/Enemigos/King/death/tile004.png" id="7_avtpd"]
+[ext_resource type="Texture2D" uid="uid://dlemmgvn1rfqy" path="res://personajes/Enemigos/King/death/tile005.png" id="8_gm6jv"]
+[ext_resource type="Texture2D" uid="uid://6fxjx654rivx" path="res://personajes/Enemigos/King/death/tile006.png" id="9_n8xo7"]
+[ext_resource type="Texture2D" uid="uid://bpjc8p6qi0y0a" path="res://personajes/Enemigos/King/death/tile007.png" id="10_prbux"]
+[ext_resource type="Texture2D" uid="uid://bnuwl1aglys2n" path="res://personajes/Enemigos/King/death/tile008.png" id="11_rdt7m"]
+[ext_resource type="Texture2D" uid="uid://p7aeuiilkico" path="res://personajes/Enemigos/King/death/tile009.png" id="12_o176v"]
+[ext_resource type="Texture2D" uid="uid://be03770d7kfvy" path="res://personajes/Enemigos/King/death/tile010.png" id="13_n002a"]
+[ext_resource type="Texture2D" uid="uid://b0suhgd05mjjp" path="res://personajes/Enemigos/King/death/tile011.png" id="14_k7tqs"]
+[ext_resource type="Texture2D" uid="uid://ds5e7s5pxvofk" path="res://personajes/Enemigos/King/death/tile012.png" id="15_nd03j"]
+[ext_resource type="Texture2D" uid="uid://bb5j28l30b8rl" path="res://personajes/Enemigos/King/death/tile013.png" id="16_ho8pl"]
+[ext_resource type="Texture2D" uid="uid://fp7mehvjgxtg" path="res://personajes/Enemigos/King/death/tile014.png" id="17_np1uc"]
+[ext_resource type="Texture2D" uid="uid://doym7amsfbr15" path="res://personajes/Enemigos/King/death/tile015.png" id="18_7u1ao"]
+[ext_resource type="Texture2D" uid="uid://ciofawl8lkmyp" path="res://personajes/Enemigos/King/death/tile016.png" id="19_1pshg"]
+[ext_resource type="Texture2D" uid="uid://cmi03ktxl5xjy" path="res://personajes/Enemigos/King/death/tile017.png" id="20_3gjfq"]
+[ext_resource type="Texture2D" uid="uid://cd6kksg8kwhfq" path="res://personajes/Enemigos/King/death/tile018.png" id="21_j6opp"]
+[ext_resource type="Texture2D" uid="uid://bci4fj102lhg7" path="res://personajes/Enemigos/King/death/tile019.png" id="22_io4dq"]
+[ext_resource type="Texture2D" uid="uid://cxbienxwnjjxf" path="res://personajes/Enemigos/King/death/tile020.png" id="23_ploe7"]
+[ext_resource type="Texture2D" uid="uid://dq2447hw8x051" path="res://personajes/Enemigos/King/death/tile021.png" id="24_osw07"]
+[ext_resource type="Texture2D" uid="uid://buseyrw8hr2mp" path="res://personajes/Enemigos/King/death/tile022.png" id="25_yl3yh"]
+[ext_resource type="Texture2D" uid="uid://dcbw7q4snicsb" path="res://personajes/Enemigos/King/death/tile023.png" id="26_ba8wa"]
+[ext_resource type="Texture2D" uid="uid://coof72h8d1r36" path="res://personajes/Enemigos/King/death/tile024.png" id="27_dq8qc"]
+[ext_resource type="Texture2D" uid="uid://d0bkr7hhdgvwn" path="res://personajes/Enemigos/King/death/tile025.png" id="28_7sjk6"]
+[ext_resource type="Texture2D" uid="uid://clsfwyrd1ymaq" path="res://personajes/Enemigos/King/death/tile026.png" id="29_knhwb"]
+[ext_resource type="Texture2D" uid="uid://735rckxk1iby" path="res://personajes/Enemigos/King/death/tile027.png" id="30_k3ara"]
+[ext_resource type="Texture2D" uid="uid://br6nv15ansnm2" path="res://personajes/Enemigos/King/death/tile028.png" id="31_ju1np"]
+[ext_resource type="Texture2D" uid="uid://wpq52ihxmjnl" path="res://personajes/Enemigos/King/death/tile029.png" id="32_kud82"]
+[ext_resource type="Texture2D" uid="uid://c07ui8t13keou" path="res://personajes/Enemigos/King/death/tile030.png" id="33_2pgka"]
+[ext_resource type="Texture2D" uid="uid://bqay7u76f7q06" path="res://personajes/Enemigos/King/death/tile031.png" id="34_jq6qf"]
+[ext_resource type="Texture2D" uid="uid://b7rsgajkpnlw5" path="res://personajes/Enemigos/King/death/tile032.png" id="35_c8pjq"]
+[ext_resource type="Texture2D" uid="uid://yo3m5yn1c7hh" path="res://personajes/Enemigos/King/death/tile033.png" id="36_6ruwp"]
+[ext_resource type="Texture2D" uid="uid://2w7fkv1t33fm" path="res://personajes/Enemigos/King/death/tile034.png" id="37_gpknk"]
+[ext_resource type="Texture2D" uid="uid://ddwii57scrar1" path="res://personajes/Enemigos/King/death/tile035.png" id="38_7dctk"]
+[ext_resource type="Texture2D" uid="uid://dkf8yys1ornrr" path="res://personajes/Enemigos/King/death/tile036.png" id="39_0oyho"]
+[ext_resource type="Texture2D" uid="uid://ddj3odl4oo0ul" path="res://personajes/Enemigos/King/hurt/tile000.png" id="41_qe8k8"]
+[ext_resource type="Texture2D" uid="uid://brvbp7yrj7yri" path="res://personajes/Enemigos/King/hurt/tile001.png" id="42_jpx2f"]
+[ext_resource type="Texture2D" uid="uid://bhrfdn6o8dgdn" path="res://personajes/Enemigos/King/hurt/tile002.png" id="43_im8rx"]
+[ext_resource type="Texture2D" uid="uid://wwye6v185dja" path="res://personajes/Enemigos/King/hurt/tile003.png" id="44_0qybk"]
+[ext_resource type="Texture2D" uid="uid://b7s0c483m4gpn" path="res://personajes/Enemigos/King/hurt/tile004.png" id="45_7603v"]
+[ext_resource type="Texture2D" uid="uid://ch6e2t1nejf5i" path="res://personajes/Enemigos/King/hurt/tile005.png" id="46_fg5rw"]
+[ext_resource type="Texture2D" uid="uid://d3mwhtsefkybe" path="res://personajes/Enemigos/King/atk/tile000.png" id="47_pl67q"]
+[ext_resource type="Texture2D" uid="uid://drheb4ghagven" path="res://personajes/Enemigos/King/atk2/tile001.png" id="48_017y7"]
+[ext_resource type="Texture2D" uid="uid://qxocs3ybxwwq" path="res://personajes/Enemigos/King/atk/tile001.png" id="48_rgdm0"]
+[ext_resource type="Texture2D" uid="uid://ui03da0ksvkc" path="res://personajes/Enemigos/King/atk2/tile002.png" id="49_6t277"]
+[ext_resource type="Texture2D" uid="uid://cy5vourp2r1ia" path="res://personajes/Enemigos/King/atk/tile002.png" id="49_8vddg"]
+[ext_resource type="Texture2D" uid="uid://c8edvwvswm2x6" path="res://personajes/Enemigos/King/atk2/tile003.png" id="50_jhmtt"]
+[ext_resource type="Texture2D" uid="uid://bl851pa4d0lrn" path="res://personajes/Enemigos/King/atk/tile003.png" id="50_mp5ra"]
+[ext_resource type="Texture2D" uid="uid://6o2xb7xjhywl" path="res://personajes/Enemigos/King/atk2/tile004.png" id="51_44djk"]
+[ext_resource type="Texture2D" uid="uid://jxkskewvogif" path="res://personajes/Enemigos/King/atk/tile004.png" id="51_jbh8m"]
+[ext_resource type="Texture2D" uid="uid://tskpqqw7jcn3" path="res://personajes/Enemigos/King/atk/tile005.png" id="52_l82xp"]
+[ext_resource type="Texture2D" uid="uid://ba7lgdhq1w1mn" path="res://personajes/Enemigos/King/atk2/tile005.png" id="52_nuyf7"]
+[ext_resource type="Texture2D" uid="uid://x7soebebd1ya" path="res://personajes/Enemigos/King/atk2/tile006.png" id="53_7mfa3"]
+[ext_resource type="Texture2D" uid="uid://eq2vm550joxy" path="res://personajes/Enemigos/King/atk/tile006.png" id="53_h38im"]
+[ext_resource type="Texture2D" uid="uid://bdvtjgcdbb3iu" path="res://personajes/Enemigos/King/atk/tile007.png" id="54_42ka0"]
+[ext_resource type="Texture2D" uid="uid://d4gsudvxxm14n" path="res://personajes/Enemigos/King/atk2/tile007.png" id="54_dlx4p"]
+[ext_resource type="Texture2D" uid="uid://clhouvjlxe7p4" path="res://personajes/Enemigos/King/atk/tile008.png" id="55_2xvl6"]
+[ext_resource type="Texture2D" uid="uid://bs7gxo7m0dk5e" path="res://personajes/Enemigos/King/atk2/tile008.png" id="55_lwjku"]
+[ext_resource type="Texture2D" uid="uid://bv55if3rnclph" path="res://personajes/Enemigos/King/atk2/tile009.png" id="56_h7utk"]
+[ext_resource type="Texture2D" uid="uid://dbsxl126u33ha" path="res://personajes/Enemigos/King/atk/tile009.png" id="56_udf8r"]
+[ext_resource type="Texture2D" uid="uid://di72hxg2t4thp" path="res://personajes/Enemigos/King/atk2/tile010.png" id="57_avovl"]
+[ext_resource type="Texture2D" uid="uid://ma1dwsknj0e8" path="res://personajes/Enemigos/King/atk/tile010.png" id="57_bdm70"]
+[ext_resource type="Texture2D" uid="uid://75ahpp6opurt" path="res://personajes/Enemigos/King/atk2/tile011.png" id="58_26e54"]
+[ext_resource type="Texture2D" uid="uid://bd0ctplfdo5je" path="res://personajes/Enemigos/King/atk/tile011.png" id="58_luhri"]
+[ext_resource type="Texture2D" uid="uid://csr8211tpaofr" path="res://personajes/Enemigos/King/atk/tile012.png" id="59_kf3d7"]
+[ext_resource type="Texture2D" uid="uid://bf3yo2p608yfn" path="res://personajes/Enemigos/King/atk2/tile012.png" id="59_t1c3g"]
+[ext_resource type="Texture2D" uid="uid://cwyow70sqoa2" path="res://personajes/Enemigos/King/atk/tile013.png" id="60_6ycv4"]
+[ext_resource type="Texture2D" uid="uid://d2h26avfwhtuf" path="res://personajes/Enemigos/King/atk2/tile013.png" id="60_h6yh0"]
+[ext_resource type="Texture2D" uid="uid://d0daj7nbl2xej" path="res://personajes/Enemigos/King/atk2/tile014.png" id="61_25y77"]
+[ext_resource type="Texture2D" uid="uid://wcsxb54v0tjn" path="res://personajes/Enemigos/King/atk/tile014.png" id="61_kox2d"]
+[ext_resource type="Texture2D" uid="uid://drcqhqnl5485a" path="res://personajes/Enemigos/King/atk/tile015.png" id="62_7ap6b"]
+[ext_resource type="Texture2D" uid="uid://wm1lnqetwvmy" path="res://personajes/Enemigos/King/atk2/tile015.png" id="62_aguu6"]
+[ext_resource type="Texture2D" uid="uid://b8raorhbrqic1" path="res://personajes/Enemigos/King/atk/tile016.png" id="63_7bo7e"]
+[ext_resource type="Texture2D" uid="uid://blx77086sp31y" path="res://personajes/Enemigos/King/atk2/tile016.png" id="63_wnb8c"]
+[ext_resource type="Texture2D" uid="uid://c5e8v34qe7t6" path="res://personajes/Enemigos/King/atk/tile017.png" id="64_xh5im"]
+[ext_resource type="Texture2D" uid="uid://di6xboonaeioi" path="res://personajes/Enemigos/King/atk2/tile017.png" id="64_xqjsd"]
+[ext_resource type="Texture2D" uid="uid://bwavpkj2c2xge" path="res://personajes/Enemigos/King/atk/tile018.png" id="65_3hxaw"]
+[ext_resource type="Texture2D" uid="uid://l1hgkve6blr6" path="res://personajes/Enemigos/King/atk2/tile018.png" id="65_4l0yn"]
+[ext_resource type="Texture2D" uid="uid://dd8d2vdd63jsw" path="res://personajes/Enemigos/King/atk2/tile019.png" id="66_33514"]
+[ext_resource type="Texture2D" uid="uid://bb3ihwfiy6m5y" path="res://personajes/Enemigos/King/atk/tile019.png" id="66_ustnn"]
+[ext_resource type="Texture2D" uid="uid://g0spfvlky7af" path="res://personajes/Enemigos/King/atk2/tile020.png" id="67_ankmt"]
+[ext_resource type="Texture2D" uid="uid://b4ucen32p4m64" path="res://personajes/Enemigos/King/atk/tile020.png" id="67_apoxg"]
+[ext_resource type="Texture2D" uid="uid://nb0ym2ryay78" path="res://personajes/Enemigos/King/atk/tile021.png" id="68_2viqo"]
+[ext_resource type="Texture2D" uid="uid://ce2haqkfxadbk" path="res://personajes/Enemigos/King/atk2/tile021.png" id="68_rr210"]
+[ext_resource type="Texture2D" uid="uid://ckv74hkmpokex" path="res://personajes/Enemigos/King/atk2/tile022.png" id="69_my2iy"]
+[ext_resource type="Texture2D" uid="uid://diq77dqypjfbh" path="res://personajes/Enemigos/King/atk/tile022.png" id="69_tqp0s"]
+[ext_resource type="Texture2D" uid="uid://dii5gpkbipt75" path="res://personajes/Enemigos/King/atk/tile023.png" id="70_4pw10"]
+[ext_resource type="Texture2D" uid="uid://1eol03hla5s4" path="res://personajes/Enemigos/King/atk2/tile023.png" id="70_c55xr"]
+[ext_resource type="Texture2D" uid="uid://dncbx5prf815h" path="res://personajes/Enemigos/King/atk/tile024.png" id="71_fb435"]
+[ext_resource type="Texture2D" uid="uid://c5n3vptrsm1uj" path="res://personajes/Enemigos/King/atk2/tile024.png" id="71_g40yf"]
+[ext_resource type="Texture2D" uid="uid://b6c3dip6hg3fm" path="res://personajes/Enemigos/King/atk2/tile025.png" id="72_0o0ax"]
+[ext_resource type="Texture2D" uid="uid://gf1upxy7xacc" path="res://personajes/Enemigos/King/atk/tile025.png" id="72_vkqqs"]
+[ext_resource type="Texture2D" uid="uid://co6cnab0isu6e" path="res://personajes/Enemigos/King/atk/tile026.png" id="73_kdh44"]
+[ext_resource type="Texture2D" uid="uid://bup4de8ui8f0j" path="res://personajes/Enemigos/King/atk2/tile026.png" id="73_xa7n7"]
+[ext_resource type="Texture2D" uid="uid://20rraxn8r847" path="res://personajes/Enemigos/King/atk2/tile027.png" id="74_npor0"]
+[ext_resource type="Texture2D" uid="uid://cpxcu3gp7xyew" path="res://personajes/Enemigos/King/atk/tile027.png" id="74_ty6p6"]
+[ext_resource type="Texture2D" uid="uid://b565o4e17ajpr" path="res://personajes/Enemigos/King/atk2/tile028.png" id="75_4lfid"]
+[ext_resource type="Texture2D" uid="uid://cyvn6784vb1m1" path="res://personajes/Enemigos/King/atk/tile028.png" id="75_62kgj"]
+[ext_resource type="Texture2D" uid="uid://cg65egrjfqxvj" path="res://personajes/Enemigos/King/atk/tile029.png" id="76_kmp16"]
+[ext_resource type="Texture2D" uid="uid://bjmyi7usripqn" path="res://personajes/Enemigos/King/atk2/tile029.png" id="76_uatew"]
+[ext_resource type="Texture2D" uid="uid://cqgkiy7xknpv2" path="res://personajes/Enemigos/King/atk/tile030.png" id="77_wpmvu"]
+[ext_resource type="Texture2D" uid="uid://tneyqm86hkv" path="res://personajes/Enemigos/King/atk/tile031.png" id="78_jedl6"]
+[ext_resource type="Texture2D" uid="uid://bqk5eb82hcygr" path="res://personajes/Enemigos/King/atk/tile032.png" id="79_1auac"]
+[ext_resource type="Texture2D" uid="uid://bck68fuvn2lk0" path="res://personajes/Enemigos/King/atk/tile033.png" id="80_yhuth"]
+[ext_resource type="Texture2D" uid="uid://cwnmk5rf0mulq" path="res://personajes/Enemigos/King/atk/tile034.png" id="81_5mpb2"]
+[ext_resource type="Texture2D" uid="uid://bvt7p15klv0fc" path="res://personajes/Enemigos/King/atk/tile035.png" id="82_ipgq8"]
+[ext_resource type="Texture2D" uid="uid://xoljudcjkb0h" path="res://personajes/Enemigos/King/atk/tile036.png" id="83_63ff6"]
+[ext_resource type="Texture2D" uid="uid://c5nyqc11smkbr" path="res://personajes/Enemigos/King/atk/tile037.png" id="84_cdeah"]
+[ext_resource type="Texture2D" uid="uid://dftcp3fpigvc8" path="res://personajes/Enemigos/King/atk/tile038.png" id="85_ves5c"]
+[ext_resource type="Texture2D" uid="uid://dfbgpji3tsspr" path="res://personajes/Enemigos/King/atk/tile039.png" id="86_yyybn"]
+[ext_resource type="Texture2D" uid="uid://m71pn3f77lp5" path="res://personajes/Enemigos/King/atk/tile040.png" id="87_8xios"]
+[ext_resource type="Texture2D" uid="uid://dbmbbluryq5wq" path="res://personajes/Enemigos/King/atk/tile041.png" id="88_l0i2t"]
+[ext_resource type="Texture2D" uid="uid://ciaxjf64a0vyl" path="res://personajes/Enemigos/King/atk/tile042.png" id="89_egiw7"]
+[ext_resource type="Texture2D" uid="uid://bopm4nybxder" path="res://personajes/Enemigos/King/atk/tile043.png" id="90_nflbh"]
+[ext_resource type="Texture2D" uid="uid://cj5xara0hd2e1" path="res://personajes/Enemigos/King/atk/tile044.png" id="91_i27d5"]
+[ext_resource type="Texture2D" uid="uid://b7kao2co10pa" path="res://personajes/Enemigos/King/atk/tile045.png" id="92_qm5ef"]
+[ext_resource type="Texture2D" uid="uid://d2uiin3y4kqs2" path="res://personajes/Enemigos/King/atk/tile046.png" id="93_mrej6"]
+[ext_resource type="Texture2D" uid="uid://2q0iecb0gkwe" path="res://personajes/Enemigos/King/atk/tile047.png" id="94_7jhw0"]
+[ext_resource type="Texture2D" uid="uid://ba5fqsh5io8im" path="res://personajes/Enemigos/King/atk/tile048.png" id="95_enojc"]
+[ext_resource type="Texture2D" uid="uid://ctla4blp3vil2" path="res://personajes/Enemigos/King/atk/tile049.png" id="96_pjpu3"]
+[ext_resource type="Texture2D" uid="uid://dokc0cj1ytxmn" path="res://personajes/Enemigos/King/atk/tile050.png" id="97_64ptx"]
+[ext_resource type="Texture2D" uid="uid://cyumntxot7f7n" path="res://personajes/Enemigos/King/atk/tile051.png" id="98_7455h"]
+[ext_resource type="Texture2D" uid="uid://b5i4wu5xb77a2" path="res://personajes/Enemigos/King/atk/tile052.png" id="99_c25dh"]
+[ext_resource type="Texture2D" uid="uid://3p86l2gyx0s1" path="res://personajes/Enemigos/King/atk/tile053.png" id="100_mnn4w"]
+[ext_resource type="Texture2D" uid="uid://cduydsr6ubv04" path="res://personajes/Enemigos/King/atk/tile054.png" id="101_m3dkj"]
+[ext_resource type="Texture2D" uid="uid://bn46s0gc5ujbv" path="res://personajes/Enemigos/King/atk/tile055.png" id="102_vrbps"]
+[ext_resource type="Texture2D" uid="uid://b8s0sixu3sl4g" path="res://personajes/Enemigos/King/atk/tile056.png" id="103_aat1x"]
+[ext_resource type="Texture2D" uid="uid://ccpr5c23x3nfc" path="res://personajes/Enemigos/King/atk/tile057.png" id="104_p1c1y"]
 
 [sub_resource type="Animation" id="Animation_f26j7"]
 length = 0.001
@@ -16,7 +147,23 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("1_h7kkg")]
+"values": [ExtResource("2_01d8q")]
+}
+
+[sub_resource type="Animation" id="Animation_pfnol"]
+resource_name = "king_death"
+length = 3.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_dc7fd"), ExtResource("4_n4suf"), ExtResource("5_xhxmm"), ExtResource("6_1mara"), ExtResource("7_avtpd"), ExtResource("8_gm6jv"), ExtResource("9_n8xo7"), ExtResource("10_prbux"), ExtResource("11_rdt7m"), ExtResource("12_o176v"), ExtResource("13_n002a"), ExtResource("14_k7tqs"), ExtResource("15_nd03j"), ExtResource("16_ho8pl"), ExtResource("17_np1uc"), ExtResource("18_7u1ao"), ExtResource("19_1pshg"), ExtResource("20_3gjfq"), ExtResource("21_j6opp"), ExtResource("22_io4dq"), ExtResource("23_ploe7"), ExtResource("24_osw07"), ExtResource("25_yl3yh"), ExtResource("26_ba8wa"), ExtResource("27_dq8qc"), ExtResource("28_7sjk6"), ExtResource("29_knhwb"), ExtResource("30_k3ara"), ExtResource("31_ju1np"), ExtResource("32_kud82"), ExtResource("33_2pgka"), ExtResource("34_jq6qf"), ExtResource("35_c8pjq"), ExtResource("36_6ruwp"), ExtResource("37_gpknk"), ExtResource("38_7dctk"), ExtResource("39_0oyho")]
 }
 
 [sub_resource type="Animation" id="Animation_t523t"]
@@ -29,16 +176,80 @@ tracks/0/path = NodePath(".:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.7),
+"times": PackedFloat32Array(0.1, 0.7),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [ExtResource("1_h7kkg"), ExtResource("2_nu0hh")]
 }
 
+[sub_resource type="Animation" id="Animation_ooji6"]
+resource_name = "king_hurt"
+length = 1.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("41_qe8k8"), ExtResource("42_jpx2f"), ExtResource("43_im8rx"), ExtResource("44_0qybk"), ExtResource("44_0qybk"), ExtResource("44_0qybk"), ExtResource("45_7603v"), ExtResource("46_fg5rw"), ExtResource("43_im8rx"), ExtResource("42_jpx2f")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.4, 0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.737255, 0, 0.0784314, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ibuhw"]
+resource_name = "king_atk2"
+length = 2.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_01d8q"), ExtResource("48_017y7"), ExtResource("49_6t277"), ExtResource("50_jhmtt"), ExtResource("51_44djk"), ExtResource("52_nuyf7"), ExtResource("53_7mfa3"), ExtResource("54_dlx4p"), ExtResource("55_lwjku"), ExtResource("56_h7utk"), ExtResource("57_avovl"), ExtResource("58_26e54"), ExtResource("59_t1c3g"), ExtResource("60_h6yh0"), ExtResource("61_25y77"), ExtResource("62_aguu6"), ExtResource("63_wnb8c"), ExtResource("64_xqjsd"), ExtResource("65_4l0yn"), ExtResource("66_33514"), ExtResource("67_ankmt"), ExtResource("68_rr210"), ExtResource("69_my2iy"), ExtResource("70_c55xr"), ExtResource("71_g40yf"), ExtResource("72_0o0ax"), ExtResource("73_xa7n7"), ExtResource("74_npor0"), ExtResource("75_4lfid"), ExtResource("76_uatew")]
+}
+
+[sub_resource type="Animation" id="Animation_nb516"]
+resource_name = "king_atk1"
+length = 5.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("47_pl67q"), ExtResource("48_rgdm0"), ExtResource("49_8vddg"), ExtResource("50_mp5ra"), ExtResource("51_jbh8m"), ExtResource("52_l82xp"), ExtResource("53_h38im"), ExtResource("54_42ka0"), ExtResource("55_2xvl6"), ExtResource("56_udf8r"), ExtResource("57_bdm70"), ExtResource("58_luhri"), ExtResource("59_kf3d7"), ExtResource("60_6ycv4"), ExtResource("61_kox2d"), ExtResource("62_7ap6b"), ExtResource("63_7bo7e"), ExtResource("64_xh5im"), ExtResource("65_3hxaw"), ExtResource("66_ustnn"), ExtResource("67_apoxg"), ExtResource("68_2viqo"), ExtResource("69_tqp0s"), ExtResource("70_4pw10"), ExtResource("71_fb435"), ExtResource("72_vkqqs"), ExtResource("73_kdh44"), ExtResource("74_ty6p6"), ExtResource("75_62kgj"), ExtResource("76_kmp16"), ExtResource("77_wpmvu"), ExtResource("78_jedl6"), ExtResource("79_1auac"), ExtResource("80_yhuth"), ExtResource("81_5mpb2"), ExtResource("82_ipgq8"), ExtResource("83_63ff6"), ExtResource("84_cdeah"), ExtResource("85_ves5c"), ExtResource("86_yyybn"), ExtResource("87_8xios"), ExtResource("88_l0i2t"), ExtResource("89_egiw7"), ExtResource("90_nflbh"), ExtResource("91_i27d5"), ExtResource("92_qm5ef"), ExtResource("93_mrej6"), ExtResource("94_7jhw0"), ExtResource("95_enojc"), ExtResource("96_pjpu3"), ExtResource("97_64ptx"), ExtResource("98_7455h"), ExtResource("99_c25dh"), ExtResource("100_mnn4w"), ExtResource("101_m3dkj"), ExtResource("102_vrbps"), ExtResource("103_aat1x"), ExtResource("104_p1c1y")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g1npq"]
 _data = {
 "RESET": SubResource("Animation_f26j7"),
-"idle_king": SubResource("Animation_t523t")
+"king_atk1": SubResource("Animation_ibuhw"),
+"king_atk2": SubResource("Animation_nb516"),
+"king_death": SubResource("Animation_pfnol"),
+"king_hurt": SubResource("Animation_ooji6"),
+"king_idle": SubResource("Animation_t523t")
 }
 
 [node name="Enemy4" type="CharacterBody2D"]
@@ -47,7 +258,7 @@ script = ExtResource("1_gy74a")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 scale = Vector2(8, 8)
-texture = ExtResource("1_h7kkg")
+texture = ExtResource("2_01d8q")
 flip_h = true
 
 [node name="health_bar" type="ProgressBar" parent="."]

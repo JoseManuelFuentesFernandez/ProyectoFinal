@@ -12,8 +12,6 @@ var atk : int
 var armor : int
 var health : float:
 	set(value):
-		if value < health:
-			animation_player.play("swordman_hurt")
 		health = value
 		_update_progress_bar()
 
@@ -36,6 +34,10 @@ func _atk1() -> int:
 
 func _atk2() -> int:
 	animation_player.play("swordman_atk2")
+	return atk
+
+func _ability() -> int:
+	animation_player.play("swordman_ability")
 	return atk
 
 func _hurt(damage: int):
