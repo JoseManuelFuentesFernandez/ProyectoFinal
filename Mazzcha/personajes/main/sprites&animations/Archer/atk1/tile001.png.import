@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://53a47aflu8cu"
-path="res://.godot/imported/Idle.png-0cf834b19676278c8077e6a1afe9e336.ctex"
+uid="uid://bisb1bwjg5guj"
+path="res://.godot/imported/tile001.png-f5a88a4fbe0b5bbfd818590d4eb62e65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personajes/main/sprites&animations/Wizard/idle/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-0cf834b19676278c8077e6a1afe9e336.ctex"]
+source_file="res://personajes/main/sprites&animations/Archer/atk1/tile001.png"
+dest_files=["res://.godot/imported/tile001.png-f5a88a4fbe0b5bbfd818590d4eb62e65.ctex"]
 
 [params]
 
