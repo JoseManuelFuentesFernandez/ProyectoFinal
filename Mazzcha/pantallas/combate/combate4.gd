@@ -1,8 +1,5 @@
 extends Node2D
 
-@onready var bg1 = $bg1
-@onready var bg2 = $bg2
-@onready var bg3 = $bg3
 @onready var bg4 = $bg4
 @onready var main_character = $MainCharacter
 @onready var enemy = $enemy4
@@ -21,7 +18,7 @@ func _on_atk_1_pressed():
 	main_character._atk1()
 
 func _on_atk_2_pressed():
-	pass # Replace with function body
+	main_character._atk2()
 
 func _on_ability_pressed():
 	main_character._hurt()
