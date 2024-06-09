@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://chsp042ghxqkc"]
+
+[ext_resource type="Texture2D" uid="uid://bt5a7nqacnptp" path="res://personajes/Enemigos/Necromancer/Idle/tile000.png" id="1_8yep8"]
+[ext_resource type="Script" path="res://personajes/Enemigos/enemy2.gd" id="1_t4vpr"]
+
+[sub_resource type="Animation" id="Animation_4rkju"]
+resource_name = "necro_idle"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v8bot"]
+_data = {
+"necro_idle": SubResource("Animation_4rkju")
+}
+
+[node name="Enemy2" type="CharacterBody2D"]
+script = ExtResource("1_t4vpr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(8, 8)
+texture = ExtResource("1_8yep8")
+flip_h = true
+
+[node name="health_bar" type="ProgressBar" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -119.0
+offset_top = 174.0
+offset_right = 118.0
+offset_bottom = 209.0
+grow_horizontal = 2
+value = 100.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_v8bot")
+}

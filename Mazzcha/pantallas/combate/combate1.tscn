@@ -16,7 +16,6 @@ expand_mode = 3
 [node name="MainCharacter" parent="." instance=ExtResource("2_epkx5")]
 position = Vector2(565, 673)
 slide_on_ceiling = false
-MAX_HEALTH = 10.0
 
 [node name="Enemy1" parent="." instance=ExtResource("3_krd7f")]
 position = Vector2(1387, 669)
