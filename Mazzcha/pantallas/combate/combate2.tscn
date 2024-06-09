@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://1la02h0ifldv"]
+[gd_scene load_steps=4 format=3 uid="uid://1la02h0ifldv"]
 
 [ext_resource type="Texture2D" uid="uid://b0ltqnsmtn0tx" path="res://pantallas/mazmorras/Battleground2/Bright/Battleground4.png" id="1_uf88b"]
 [ext_resource type="PackedScene" uid="uid://1u8fu60wg640" path="res://personajes/main/characters/main_character.tscn" id="2_j52mr"]
+[ext_resource type="PackedScene" uid="uid://chsp042ghxqkc" path="res://personajes/Enemigos/enemy2.tscn" id="3_gdb5e"]
 
 [node name="Combate2" type="Node2D"]
 
@@ -44,3 +45,6 @@ text = "Habilidad"
 [node name="scape" type="Button" parent="CanvasLayer/options"]
 layout_mode = 2
 text = "Huir"
+
+[node name="Enemy2" parent="." instance=ExtResource("3_gdb5e")]
+position = Vector2(1622, 706)

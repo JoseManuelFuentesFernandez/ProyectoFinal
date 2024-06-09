@@ -73,3 +73,7 @@ texture_normal = ExtResource("5_pygwt")
 stretch_mode = 3
 
 [connection signal="gui_input" from="MenuSelectorMundo" to="MenuSelectorMundo" method="_on_ScrollContainer_gui_input"]
+[connection signal="pressed" from="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer/Maz1" to="MenuSelectorMundo" method="_on_maz_1_pressed"]
+[connection signal="pressed" from="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer/Maz2" to="MenuSelectorMundo" method="_on_maz_2_pressed"]
+[connection signal="pressed" from="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer/Maz3" to="MenuSelectorMundo" method="_on_maz_3_pressed"]
+[connection signal="pressed" from="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer/Maz4" to="MenuSelectorMundo" method="_on_maz_4_pressed"]

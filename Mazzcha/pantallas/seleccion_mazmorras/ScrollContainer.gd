@@ -69,3 +69,19 @@ func _on_ScrollContainer_gui_input(event: InputEvent) -> void:
 			scroll_tween.stop()
 		else:
 			scroll()
+
+
+func _on_maz_1_pressed():
+	get_tree().change_scene_to_file("res://pantallas/combate/combate1.tscn")
+
+
+func _on_maz_2_pressed():
+	get_tree().change_scene_to_file("res://pantallas/combate/combate2.tscn")
+
+
+func _on_maz_3_pressed():
+	get_tree().change_scene_to_file("res://pantallas/combate/combate3.tscn")
+
+
+func _on_maz_4_pressed():
+	get_tree().change_scene_to_file("res://pantallas/combate/combate4.tscn")

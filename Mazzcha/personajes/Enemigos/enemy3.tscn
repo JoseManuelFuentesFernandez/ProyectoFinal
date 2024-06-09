@@ -1,0 +1,236 @@
+[gd_scene load_steps=54 format=3 uid="uid://b4vmg0ueofgwk"]
+
+[ext_resource type="Script" path="res://personajes/Enemigos/enemy3.gd" id="1_gnfo5"]
+[ext_resource type="Texture2D" uid="uid://bylescphq48ha" path="res://personajes/Enemigos/minotaur/idle/tile000.png" id="1_q1gxx"]
+[ext_resource type="Texture2D" uid="uid://bgqwdadusx0n6" path="res://personajes/Enemigos/minotaur/idle/tile001.png" id="2_0lb6j"]
+[ext_resource type="Texture2D" uid="uid://dntstayl7sjgs" path="res://personajes/Enemigos/minotaur/idle/tile002.png" id="3_vr8wp"]
+[ext_resource type="Texture2D" uid="uid://clhb5k0ghaosw" path="res://personajes/Enemigos/minotaur/idle/tile003.png" id="4_1ybyt"]
+[ext_resource type="Texture2D" uid="uid://dcca36y7s2mnk" path="res://personajes/Enemigos/minotaur/idle/tile004.png" id="5_jbkym"]
+[ext_resource type="Texture2D" uid="uid://6nlcgenvcjgh" path="res://personajes/Enemigos/minotaur/idle/tile005.png" id="6_cdyf1"]
+[ext_resource type="Texture2D" uid="uid://d1hba2abxlnh4" path="res://personajes/Enemigos/minotaur/rage_idle/tile000.png" id="7_5ovxu"]
+[ext_resource type="Texture2D" uid="uid://cl1nhcwxddh3" path="res://personajes/Enemigos/minotaur/rage_idle/tile001.png" id="8_3li4j"]
+[ext_resource type="Texture2D" uid="uid://clta7ip6k5i7f" path="res://personajes/Enemigos/minotaur/rage_idle/tile002.png" id="9_lrnr4"]
+[ext_resource type="Texture2D" uid="uid://cj7kh0dbb5ve2" path="res://personajes/Enemigos/minotaur/rage_idle/tile003.png" id="10_3ahac"]
+[ext_resource type="Texture2D" uid="uid://3hfb2ohgv11e" path="res://personajes/Enemigos/minotaur/rage_idle/tile004.png" id="11_ddamj"]
+[ext_resource type="Texture2D" uid="uid://ccp6iwfw81wi2" path="res://personajes/Enemigos/minotaur/hurt/tile000.png" id="12_fa6od"]
+[ext_resource type="Texture2D" uid="uid://qx8yevd3mgee" path="res://personajes/Enemigos/minotaur/atk1/tile000.png" id="12_qyddo"]
+[ext_resource type="Texture2D" uid="uid://4eiim8222b3v" path="res://personajes/Enemigos/minotaur/atk1/tile001.png" id="13_8170w"]
+[ext_resource type="Texture2D" uid="uid://bm1hp36yc71m3" path="res://personajes/Enemigos/minotaur/hurt/tile001.png" id="13_fklp2"]
+[ext_resource type="Texture2D" uid="uid://dfs8brdh5iu6q" path="res://personajes/Enemigos/minotaur/hurt/tile002.png" id="14_cy48h"]
+[ext_resource type="Texture2D" uid="uid://chlh2xwhyl6g7" path="res://personajes/Enemigos/minotaur/atk1/tile002.png" id="14_hvnod"]
+[ext_resource type="Texture2D" uid="uid://d18isnmqkntkb" path="res://personajes/Enemigos/minotaur/atk1/tile003.png" id="15_wsr4c"]
+[ext_resource type="Texture2D" uid="uid://e8mif1j5eia" path="res://personajes/Enemigos/minotaur/atk1/tile004.png" id="16_j562h"]
+[ext_resource type="Texture2D" uid="uid://fu188nrbtjyr" path="res://personajes/Enemigos/minotaur/atk1/tile005.png" id="17_w0ot4"]
+[ext_resource type="Texture2D" uid="uid://c4uyyod8hlraw" path="res://personajes/Enemigos/minotaur/atk1/tile006.png" id="18_i18tk"]
+[ext_resource type="Texture2D" uid="uid://ytm2piw04f3s" path="res://personajes/Enemigos/minotaur/atk1/tile007.png" id="19_n0rag"]
+[ext_resource type="Texture2D" uid="uid://bmoimniaq7jh0" path="res://personajes/Enemigos/minotaur/atk1/tile008.png" id="20_knljk"]
+[ext_resource type="Texture2D" uid="uid://c4pypffsn5xrg" path="res://personajes/Enemigos/minotaur/atk2/tile000.png" id="21_0bwcf"]
+[ext_resource type="Texture2D" uid="uid://m1v4eh8omp58" path="res://personajes/Enemigos/minotaur/atk2/tile001.png" id="22_eatag"]
+[ext_resource type="Texture2D" uid="uid://blj1pbug2n7et" path="res://personajes/Enemigos/minotaur/atk2/tile002.png" id="23_rgr4t"]
+[ext_resource type="Texture2D" uid="uid://cnd2pjxylhx6s" path="res://personajes/Enemigos/minotaur/atk2/tile003.png" id="24_yi1vu"]
+[ext_resource type="Texture2D" uid="uid://d0byy6vv6xmsr" path="res://personajes/Enemigos/minotaur/atk2/tile004.png" id="25_shns5"]
+[ext_resource type="Texture2D" uid="uid://b4hyv8urdcx51" path="res://personajes/Enemigos/minotaur/atk3/tile000.png" id="26_gg6h8"]
+[ext_resource type="Texture2D" uid="uid://dpn56gpj31wvm" path="res://personajes/Enemigos/minotaur/atk3/tile001.png" id="27_ud18t"]
+[ext_resource type="Texture2D" uid="uid://d1kiplwnkhtp" path="res://personajes/Enemigos/minotaur/atk3/tile002.png" id="28_nrnsc"]
+[ext_resource type="Texture2D" uid="uid://2cjmqi1n0s7g" path="res://personajes/Enemigos/minotaur/atk3/tile003.png" id="29_bpm0q"]
+[ext_resource type="Texture2D" uid="uid://5f5ue5l6kkfx" path="res://personajes/Enemigos/minotaur/atk3/tile004.png" id="30_gq7wo"]
+[ext_resource type="Texture2D" uid="uid://b0kl7f8ps6565" path="res://personajes/Enemigos/minotaur/atk3/tile005.png" id="31_7bdg4"]
+[ext_resource type="Texture2D" uid="uid://dg53lemfk4wy" path="res://personajes/Enemigos/minotaur/atk3/tile006.png" id="32_jlmsq"]
+[ext_resource type="Texture2D" uid="uid://cxb0fr6r1t8g0" path="res://personajes/Enemigos/minotaur/atk3/tile007.png" id="33_uystm"]
+[ext_resource type="Texture2D" uid="uid://bqy1v3cf3dp5k" path="res://personajes/Enemigos/minotaur/atk3/tile008.png" id="34_5j33e"]
+[ext_resource type="Texture2D" uid="uid://1o27gdfs1wp1" path="res://personajes/Enemigos/minotaur/death/tile000.png" id="38_q4eyi"]
+[ext_resource type="Texture2D" uid="uid://bjdwn6tof6sd2" path="res://personajes/Enemigos/minotaur/death/tile001.png" id="39_xrwmh"]
+[ext_resource type="Texture2D" uid="uid://c5nfbhxjay4hv" path="res://personajes/Enemigos/minotaur/death/tile002.png" id="40_m8u5f"]
+[ext_resource type="Texture2D" uid="uid://u5738myqlq1l" path="res://personajes/Enemigos/minotaur/death/tile003.png" id="41_lwx43"]
+[ext_resource type="Texture2D" uid="uid://bksufxvn36d2f" path="res://personajes/Enemigos/minotaur/death/tile004.png" id="42_x8bq1"]
+[ext_resource type="Texture2D" uid="uid://cog6a0cod8wxe" path="res://personajes/Enemigos/minotaur/death/tile005.png" id="43_eeupj"]
+
+[sub_resource type="Animation" id="Animation_lixrh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_q1gxx")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.996078, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_31t1r"]
+resource_name = "mino_atk1"
+length = 1.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("12_qyddo"), ExtResource("13_8170w"), ExtResource("14_hvnod"), ExtResource("15_wsr4c"), ExtResource("16_j562h"), ExtResource("17_w0ot4"), ExtResource("18_i18tk"), ExtResource("19_n0rag"), ExtResource("20_knljk")]
+}
+
+[sub_resource type="Animation" id="Animation_awa8y"]
+resource_name = "mino_atk2"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.3, 0.5, 0.7, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("21_0bwcf"), ExtResource("22_eatag"), ExtResource("23_rgr4t"), ExtResource("24_yi1vu"), ExtResource("25_shns5")]
+}
+
+[sub_resource type="Animation" id="Animation_8ivh2"]
+resource_name = "mino_atk3"
+length = 2.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("26_gg6h8"), ExtResource("27_ud18t"), ExtResource("28_nrnsc"), ExtResource("29_bpm0q"), ExtResource("30_gq7wo"), ExtResource("31_7bdg4"), ExtResource("32_jlmsq"), ExtResource("33_uystm"), ExtResource("34_5j33e")]
+}
+
+[sub_resource type="Animation" id="Animation_y0ey0"]
+resource_name = "mino_death"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.6, 0.9, 1.1, 1.3, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("38_q4eyi"), ExtResource("39_xrwmh"), ExtResource("40_m8u5f"), ExtResource("41_lwx43"), ExtResource("42_x8bq1"), ExtResource("43_eeupj")]
+}
+
+[sub_resource type="Animation" id="Animation_i13xq"]
+resource_name = "mino_hurt"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 0.6, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("12_fa6od"), ExtResource("13_fklp2"), ExtResource("14_cy48h"), ExtResource("12_fa6od")]
+}
+
+[sub_resource type="Animation" id="Animation_4amo0"]
+resource_name = "mino_idle"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_q1gxx"), ExtResource("2_0lb6j"), ExtResource("3_vr8wp"), ExtResource("4_1ybyt"), ExtResource("5_jbkym"), ExtResource("6_cdyf1")]
+}
+
+[sub_resource type="Animation" id="Animation_7jgfs"]
+resource_name = "mino_ragle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_5ovxu"), ExtResource("8_3li4j"), ExtResource("9_lrnr4"), ExtResource("10_3ahac"), ExtResource("11_ddamj")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.996078, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_86xcg"]
+_data = {
+"RESET": SubResource("Animation_lixrh"),
+"mino_atk1": SubResource("Animation_31t1r"),
+"mino_atk2": SubResource("Animation_awa8y"),
+"mino_atk3": SubResource("Animation_8ivh2"),
+"mino_death": SubResource("Animation_y0ey0"),
+"mino_hurt": SubResource("Animation_i13xq"),
+"mino_idle": SubResource("Animation_4amo0"),
+"mino_ragle": SubResource("Animation_7jgfs")
+}
+
+[node name="Enemy3" type="CharacterBody2D"]
+script = ExtResource("1_gnfo5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.996078, 0, 0, 1)
+texture_filter = 1
+scale = Vector2(8, 8)
+texture = ExtResource("1_q1gxx")
+flip_h = true
+
+[node name="health_bar" type="ProgressBar" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -99.0
+offset_top = 163.0
+offset_right = 138.0
+offset_bottom = 198.0
+grow_horizontal = 2
+value = 100.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_86xcg")
+}

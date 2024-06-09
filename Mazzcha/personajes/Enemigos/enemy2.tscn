@@ -1,13 +1,281 @@
-[gd_scene load_steps=5 format=3 uid="uid://chsp042ghxqkc"]
+[gd_scene load_steps=180 format=3 uid="uid://chsp042ghxqkc"]
 
 [ext_resource type="Texture2D" uid="uid://bt5a7nqacnptp" path="res://personajes/Enemigos/Necromancer/Idle/tile000.png" id="1_8yep8"]
 [ext_resource type="Script" path="res://personajes/Enemigos/enemy2.gd" id="1_t4vpr"]
+[ext_resource type="Texture2D" uid="uid://de5gcpfim5vyk" path="res://personajes/Enemigos/Necromancer/Idle/tile001.png" id="3_ojmvp"]
+[ext_resource type="Texture2D" uid="uid://d2hu0l8rwn0vg" path="res://personajes/Enemigos/Necromancer/Idle/tile002.png" id="4_8wuu1"]
+[ext_resource type="Texture2D" uid="uid://dwiiv25b3b2cs" path="res://personajes/Enemigos/Necromancer/Idle/tile003.png" id="5_4sb11"]
+[ext_resource type="Texture2D" uid="uid://fp63o77eohqw" path="res://personajes/Enemigos/Necromancer/Idle/tile004.png" id="6_eejom"]
+[ext_resource type="Texture2D" uid="uid://s6f82htso5cd" path="res://personajes/Enemigos/Necromancer/Idle/tile005.png" id="7_xf0ca"]
+[ext_resource type="Texture2D" uid="uid://75nsnwsbgjsn" path="res://personajes/Enemigos/Necromancer/Idle/tile006.png" id="8_q1fu6"]
+[ext_resource type="Texture2D" uid="uid://b5sfry0s4am64" path="res://personajes/Enemigos/Necromancer/Idle/tile007.png" id="9_swkb5"]
+[ext_resource type="Texture2D" uid="uid://jb02p0cyp5j2" path="res://personajes/Enemigos/Necromancer/Idle/tile008.png" id="10_bn4wo"]
+[ext_resource type="Texture2D" uid="uid://bwf8d4fw3puw4" path="res://personajes/Enemigos/Necromancer/Idle/tile009.png" id="11_byas0"]
+[ext_resource type="Texture2D" uid="uid://dcqed4k831r83" path="res://personajes/Enemigos/Necromancer/Idle/tile010.png" id="12_3i4eq"]
+[ext_resource type="Texture2D" uid="uid://bqb4c7gxbbvqn" path="res://personajes/Enemigos/Necromancer/Idle/tile011.png" id="13_p5f1i"]
+[ext_resource type="Texture2D" uid="uid://dcup4m82ap1bo" path="res://personajes/Enemigos/Necromancer/Idle/tile012.png" id="14_6qpco"]
+[ext_resource type="Texture2D" uid="uid://fvyhndhakuii" path="res://personajes/Enemigos/Necromancer/Idle/tile013.png" id="15_tvaxj"]
+[ext_resource type="Texture2D" uid="uid://c6ulk12f242c2" path="res://personajes/Enemigos/Necromancer/Idle/tile014.png" id="16_y8kx6"]
+[ext_resource type="Texture2D" uid="uid://c76ih6ax5p1xj" path="res://personajes/Enemigos/Necromancer/Idle/tile015.png" id="17_2i2ew"]
+[ext_resource type="Texture2D" uid="uid://4bgj8h1sbf3t" path="res://personajes/Enemigos/Necromancer/Idle/tile016.png" id="18_i5wgn"]
+[ext_resource type="Texture2D" uid="uid://d30nlj704e17c" path="res://personajes/Enemigos/Necromancer/Idle/tile017.png" id="19_cb6m4"]
+[ext_resource type="Texture2D" uid="uid://4hqss3n8q2um" path="res://personajes/Enemigos/Necromancer/Idle/tile018.png" id="20_aagp4"]
+[ext_resource type="Texture2D" uid="uid://7c4kugmth0ol" path="res://personajes/Enemigos/Necromancer/Idle/tile019.png" id="21_h8gri"]
+[ext_resource type="Texture2D" uid="uid://c3iptm0r1m5h7" path="res://personajes/Enemigos/Necromancer/Idle/tile020.png" id="22_xqbua"]
+[ext_resource type="Texture2D" uid="uid://bvqf1u7thx50u" path="res://personajes/Enemigos/Necromancer/Idle/tile021.png" id="23_t7e88"]
+[ext_resource type="Texture2D" uid="uid://cfjl2741i2pkh" path="res://personajes/Enemigos/Necromancer/Idle/tile022.png" id="24_kspft"]
+[ext_resource type="Texture2D" uid="uid://dek6iw5qf6dhy" path="res://personajes/Enemigos/Necromancer/Idle/tile023.png" id="25_drywa"]
+[ext_resource type="Texture2D" uid="uid://cqe1ra1m0dh0f" path="res://personajes/Enemigos/Necromancer/Idle/tile024.png" id="26_c8bbf"]
+[ext_resource type="Texture2D" uid="uid://cca8035kqvyam" path="res://personajes/Enemigos/Necromancer/Idle/tile025.png" id="27_hlpde"]
+[ext_resource type="Texture2D" uid="uid://d2beuso1qsnbo" path="res://personajes/Enemigos/Necromancer/Idle/tile026.png" id="28_q6wcs"]
+[ext_resource type="Texture2D" uid="uid://dndxdkwl7o7qe" path="res://personajes/Enemigos/Necromancer/Idle/tile027.png" id="29_h8rto"]
+[ext_resource type="Texture2D" uid="uid://d1st4mdccseyi" path="res://personajes/Enemigos/Necromancer/Idle/tile028.png" id="30_xp3em"]
+[ext_resource type="Texture2D" uid="uid://d2o4y6qa0y0bc" path="res://personajes/Enemigos/Necromancer/Idle/tile029.png" id="31_mg76i"]
+[ext_resource type="Texture2D" uid="uid://dmrukl6mwy8ab" path="res://personajes/Enemigos/Necromancer/Idle/tile030.png" id="32_2ugch"]
+[ext_resource type="Texture2D" uid="uid://bcatsndefnj86" path="res://personajes/Enemigos/Necromancer/Idle/tile031.png" id="33_4ym0s"]
+[ext_resource type="Texture2D" uid="uid://bwkbs1l2swucl" path="res://personajes/Enemigos/Necromancer/Idle/tile032.png" id="34_g6gt7"]
+[ext_resource type="Texture2D" uid="uid://bok6xjpiw8wxp" path="res://personajes/Enemigos/Necromancer/Idle/tile033.png" id="35_g0tdc"]
+[ext_resource type="Texture2D" uid="uid://crluhldjir11f" path="res://personajes/Enemigos/Necromancer/Idle/tile034.png" id="36_gwubp"]
+[ext_resource type="Texture2D" uid="uid://dbq1s4qequr3w" path="res://personajes/Enemigos/Necromancer/Idle/tile035.png" id="37_kmu7b"]
+[ext_resource type="Texture2D" uid="uid://bnvu2mc8blso0" path="res://personajes/Enemigos/Necromancer/Idle/tile036.png" id="38_ijkdl"]
+[ext_resource type="Texture2D" uid="uid://c4xxc2tk3hyof" path="res://personajes/Enemigos/Necromancer/Idle/tile037.png" id="39_yiqst"]
+[ext_resource type="Texture2D" uid="uid://fok521wtapyb" path="res://personajes/Enemigos/Necromancer/Idle/tile038.png" id="40_hlbsg"]
+[ext_resource type="Texture2D" uid="uid://dxsdhlmeivxgx" path="res://personajes/Enemigos/Necromancer/Idle/tile039.png" id="41_60oie"]
+[ext_resource type="Texture2D" uid="uid://c58wx1uyr13qs" path="res://personajes/Enemigos/Necromancer/Idle/tile040.png" id="42_s7xvt"]
+[ext_resource type="Texture2D" uid="uid://xph73hkgu6hc" path="res://personajes/Enemigos/Necromancer/Idle/tile041.png" id="43_u3r47"]
+[ext_resource type="Texture2D" uid="uid://62jd3ffuk7by" path="res://personajes/Enemigos/Necromancer/Idle/tile042.png" id="44_txdib"]
+[ext_resource type="Texture2D" uid="uid://dbg5f81tohovy" path="res://personajes/Enemigos/Necromancer/Idle/tile043.png" id="45_sselu"]
+[ext_resource type="Texture2D" uid="uid://c7excrv1wygup" path="res://personajes/Enemigos/Necromancer/Idle/tile044.png" id="46_ohyhk"]
+[ext_resource type="Texture2D" uid="uid://cq1venuejdydd" path="res://personajes/Enemigos/Necromancer/Idle/tile045.png" id="47_h6ypo"]
+[ext_resource type="Texture2D" uid="uid://b7iu6m33ncjwo" path="res://personajes/Enemigos/Necromancer/Idle/tile046.png" id="48_ct31j"]
+[ext_resource type="Texture2D" uid="uid://debbqqc57ravc" path="res://personajes/Enemigos/Necromancer/Idle/tile047.png" id="49_vyrde"]
+[ext_resource type="Texture2D" uid="uid://bsbm6gb1spdee" path="res://personajes/Enemigos/Necromancer/Idle/tile048.png" id="50_phm8v"]
+[ext_resource type="Texture2D" uid="uid://g4rilpcfsjbd" path="res://personajes/Enemigos/Necromancer/Idle/tile049.png" id="51_01ldc"]
+[ext_resource type="Texture2D" uid="uid://dcapcoqem20d8" path="res://personajes/Enemigos/Necromancer/GetHit/tile000.png" id="52_dxsnl"]
+[ext_resource type="Texture2D" uid="uid://chu3u44vqg60i" path="res://personajes/Enemigos/Necromancer/GetHit/tile001.png" id="53_h6tnv"]
+[ext_resource type="Texture2D" uid="uid://hw3ko5tn13qi" path="res://personajes/Enemigos/Necromancer/GetHit/tile002.png" id="54_shr1q"]
+[ext_resource type="Texture2D" uid="uid://dbpk0chl8ipff" path="res://personajes/Enemigos/Necromancer/GetHit/tile003.png" id="55_myqvl"]
+[ext_resource type="Texture2D" uid="uid://bopgifj8butl7" path="res://personajes/Enemigos/Necromancer/GetHit/tile004.png" id="56_20ea7"]
+[ext_resource type="Texture2D" uid="uid://dilno78uqb7uf" path="res://personajes/Enemigos/Necromancer/GetHit/tile005.png" id="57_mjose"]
+[ext_resource type="Texture2D" uid="uid://br8srhbonw457" path="res://personajes/Enemigos/Necromancer/GetHit/tile006.png" id="58_81iu1"]
+[ext_resource type="Texture2D" uid="uid://chpyt8bqpo62q" path="res://personajes/Enemigos/Necromancer/GetHit/tile007.png" id="59_okq0j"]
+[ext_resource type="Texture2D" uid="uid://4hdso5dpm2gy" path="res://personajes/Enemigos/Necromancer/GetHit/tile008.png" id="60_pdli7"]
+[ext_resource type="Texture2D" uid="uid://bwungwu7lsc1o" path="res://personajes/Enemigos/Necromancer/Death/tile000.png" id="61_uxm70"]
+[ext_resource type="Texture2D" uid="uid://br0cvorgtvkfb" path="res://personajes/Enemigos/Necromancer/Death/tile001.png" id="62_uqv6o"]
+[ext_resource type="Texture2D" uid="uid://dcfae5wrpxhe0" path="res://personajes/Enemigos/Necromancer/Death/tile002.png" id="63_xnxg6"]
+[ext_resource type="Texture2D" uid="uid://mk6jc5w6hums" path="res://personajes/Enemigos/Necromancer/Death/tile003.png" id="64_312br"]
+[ext_resource type="Texture2D" uid="uid://dvv3tb041it62" path="res://personajes/Enemigos/Necromancer/Death/tile004.png" id="65_j0bn2"]
+[ext_resource type="Texture2D" uid="uid://crvhup754h55n" path="res://personajes/Enemigos/Necromancer/Death/tile005.png" id="66_pxxil"]
+[ext_resource type="Texture2D" uid="uid://6nbr38ghguvl" path="res://personajes/Enemigos/Necromancer/Death/tile006.png" id="67_lcaa1"]
+[ext_resource type="Texture2D" uid="uid://m4gi61xictko" path="res://personajes/Enemigos/Necromancer/Death/tile007.png" id="68_hlg3o"]
+[ext_resource type="Texture2D" uid="uid://bodrmoen4vqhi" path="res://personajes/Enemigos/Necromancer/Death/tile008.png" id="69_7nu6i"]
+[ext_resource type="Texture2D" uid="uid://drdruou54ofe7" path="res://personajes/Enemigos/Necromancer/Death/tile009.png" id="70_lygf0"]
+[ext_resource type="Texture2D" uid="uid://ciomb3lhuapv2" path="res://personajes/Enemigos/Necromancer/Death/tile010.png" id="71_sf0be"]
+[ext_resource type="Texture2D" uid="uid://dq788hvprpuow" path="res://personajes/Enemigos/Necromancer/Death/tile011.png" id="72_35srk"]
+[ext_resource type="Texture2D" uid="uid://cfdyswi5xf7l5" path="res://personajes/Enemigos/Necromancer/Death/tile012.png" id="73_ls2en"]
+[ext_resource type="Texture2D" uid="uid://cicq4wwxwffty" path="res://personajes/Enemigos/Necromancer/Death/tile015.png" id="74_n75t4"]
+[ext_resource type="Texture2D" uid="uid://p6qj237y5mqv" path="res://personajes/Enemigos/Necromancer/Death/tile016.png" id="75_p8we8"]
+[ext_resource type="Texture2D" uid="uid://byyog7gxmjlfa" path="res://personajes/Enemigos/Necromancer/Death/tile017.png" id="76_tntvj"]
+[ext_resource type="Texture2D" uid="uid://b08c1c7qp86xk" path="res://personajes/Enemigos/Necromancer/Death/tile018.png" id="77_aqw22"]
+[ext_resource type="Texture2D" uid="uid://ba70igfoy2xcj" path="res://personajes/Enemigos/Necromancer/Death/tile019.png" id="78_ygadx"]
+[ext_resource type="Texture2D" uid="uid://d3boir8uh1m60" path="res://personajes/Enemigos/Necromancer/Death/tile020.png" id="79_1whvk"]
+[ext_resource type="Texture2D" uid="uid://rdu8vkujpr2j" path="res://personajes/Enemigos/Necromancer/Death/tile021.png" id="80_n4ayc"]
+[ext_resource type="Texture2D" uid="uid://cnttapmwpiwed" path="res://personajes/Enemigos/Necromancer/Death/tile022.png" id="81_2j10b"]
+[ext_resource type="Texture2D" uid="uid://bxux0orsgyj0c" path="res://personajes/Enemigos/Necromancer/Death/tile023.png" id="82_8ebsp"]
+[ext_resource type="Texture2D" uid="uid://c1382bvhychtb" path="res://personajes/Enemigos/Necromancer/Death/tile024.png" id="83_ebtmt"]
+[ext_resource type="Texture2D" uid="uid://2xd7clgu1kxh" path="res://personajes/Enemigos/Necromancer/Death/tile025.png" id="84_uasqv"]
+[ext_resource type="Texture2D" uid="uid://bedea5ofi42xh" path="res://personajes/Enemigos/Necromancer/Death/tile026.png" id="85_3lkbj"]
+[ext_resource type="Texture2D" uid="uid://b5w2xscrnol0" path="res://personajes/Enemigos/Necromancer/Death/tile027.png" id="86_deioc"]
+[ext_resource type="Texture2D" uid="uid://c62rffw38dy63" path="res://personajes/Enemigos/Necromancer/Death/tile028.png" id="87_t15vn"]
+[ext_resource type="Texture2D" uid="uid://brgh152kgvmcl" path="res://personajes/Enemigos/Necromancer/Death/tile029.png" id="88_6a7qh"]
+[ext_resource type="Texture2D" uid="uid://dt65kv3jcbbcb" path="res://personajes/Enemigos/Necromancer/Death/tile030.png" id="89_uxrbv"]
+[ext_resource type="Texture2D" uid="uid://cvioultx6vybn" path="res://personajes/Enemigos/Necromancer/Death/tile031.png" id="90_ybsgk"]
+[ext_resource type="Texture2D" uid="uid://dwngyw1foxjg6" path="res://personajes/Enemigos/Necromancer/Death/tile032.png" id="91_hbc61"]
+[ext_resource type="Texture2D" uid="uid://b8yf2st82pu1i" path="res://personajes/Enemigos/Necromancer/Death/tile033.png" id="92_euxk6"]
+[ext_resource type="Texture2D" uid="uid://do11wj6qjy4i0" path="res://personajes/Enemigos/Necromancer/Death/tile034.png" id="93_ajltp"]
+[ext_resource type="Texture2D" uid="uid://da6yxlyte0vau" path="res://personajes/Enemigos/Necromancer/Death/tile035.png" id="94_dmrcj"]
+[ext_resource type="Texture2D" uid="uid://cpf8e625ifmcw" path="res://personajes/Enemigos/Necromancer/Death/tile036.png" id="95_0k56m"]
+[ext_resource type="Texture2D" uid="uid://cdy8qvu1gtk34" path="res://personajes/Enemigos/Necromancer/Death/tile037.png" id="96_h0d58"]
+[ext_resource type="Texture2D" uid="uid://c0gp1iyow8udt" path="res://personajes/Enemigos/Necromancer/Death/tile038.png" id="97_c43xx"]
+[ext_resource type="Texture2D" uid="uid://dl38sqonnoee3" path="res://personajes/Enemigos/Necromancer/Death/tile039.png" id="98_brg3b"]
+[ext_resource type="Texture2D" uid="uid://emp8p5khoyv" path="res://personajes/Enemigos/Necromancer/Death/tile040.png" id="99_r30ho"]
+[ext_resource type="Texture2D" uid="uid://b1kmecvwyu2xc" path="res://personajes/Enemigos/Necromancer/Death/tile041.png" id="100_fpgo4"]
+[ext_resource type="Texture2D" uid="uid://cujftvilddia6" path="res://personajes/Enemigos/Necromancer/Death/tile042.png" id="101_xdg8b"]
+[ext_resource type="Texture2D" uid="uid://dq55vjh68i2lu" path="res://personajes/Enemigos/Necromancer/Death/tile043.png" id="102_hqpug"]
+[ext_resource type="Texture2D" uid="uid://bx653um7nv1ff" path="res://personajes/Enemigos/Necromancer/Death/tile044.png" id="103_mwbmn"]
+[ext_resource type="Texture2D" uid="uid://x0d27eiqjiht" path="res://personajes/Enemigos/Necromancer/Death/tile045.png" id="104_cf5u7"]
+[ext_resource type="Texture2D" uid="uid://dxkoogc1mg12w" path="res://personajes/Enemigos/Necromancer/Death/tile046.png" id="105_sesne"]
+[ext_resource type="Texture2D" uid="uid://crlfo6rhjxddt" path="res://personajes/Enemigos/Necromancer/Death/tile047.png" id="106_2h3cp"]
+[ext_resource type="Texture2D" uid="uid://dqakmgbqjgtlh" path="res://personajes/Enemigos/Necromancer/atk2/tile000.png" id="107_amcke"]
+[ext_resource type="Texture2D" uid="uid://dck5jdsmxsqmr" path="res://personajes/Enemigos/Necromancer/atk2/tile001.png" id="108_7hcer"]
+[ext_resource type="Texture2D" uid="uid://c2eahq85o0vpw" path="res://personajes/Enemigos/Necromancer/atk2/tile002.png" id="109_ngbo0"]
+[ext_resource type="Texture2D" uid="uid://5qbhs4v265wu" path="res://personajes/Enemigos/Necromancer/atk2/tile003.png" id="110_m6e6r"]
+[ext_resource type="Texture2D" uid="uid://c3citj0ocupb1" path="res://personajes/Enemigos/Necromancer/atk2/tile004.png" id="111_voqwe"]
+[ext_resource type="Texture2D" uid="uid://cbwjvmr2s17ny" path="res://personajes/Enemigos/Necromancer/atk2/tile005.png" id="112_whivu"]
+[ext_resource type="Texture2D" uid="uid://cu8ofbp0krf4d" path="res://personajes/Enemigos/Necromancer/atk2/tile006.png" id="113_tpt6n"]
+[ext_resource type="Texture2D" uid="uid://dc8r48g8v3vkl" path="res://personajes/Enemigos/Necromancer/atk2/tile008.png" id="114_1wjdl"]
+[ext_resource type="Texture2D" uid="uid://ewofltmnch37" path="res://personajes/Enemigos/Necromancer/atk2/tile009.png" id="115_7p3o3"]
+[ext_resource type="Texture2D" uid="uid://d3w44cnjrsxe3" path="res://personajes/Enemigos/Necromancer/atk2/tile010.png" id="116_ujnmo"]
+[ext_resource type="Texture2D" uid="uid://brnbup04psw6b" path="res://personajes/Enemigos/Necromancer/atk2/tile011.png" id="117_hl7oq"]
+[ext_resource type="Texture2D" uid="uid://bs3v5mgliwhpb" path="res://personajes/Enemigos/Necromancer/atk2/tile012.png" id="118_5hen2"]
+[ext_resource type="Texture2D" uid="uid://csasl7ryi5a2u" path="res://personajes/Enemigos/Necromancer/atk2/tile013.png" id="119_34elx"]
+[ext_resource type="Texture2D" uid="uid://bcqwqd7i1gov8" path="res://personajes/Enemigos/Necromancer/atk2/tile014.png" id="120_wpuye"]
+[ext_resource type="Texture2D" uid="uid://dn6g47jlq2pay" path="res://personajes/Enemigos/Necromancer/atk2/tile015.png" id="121_0pj76"]
+[ext_resource type="Texture2D" uid="uid://b67kuj0whyq10" path="res://personajes/Enemigos/Necromancer/atk2/tile016.png" id="122_s8d63"]
+[ext_resource type="Texture2D" uid="uid://c1sitq0up7qtv" path="res://personajes/Enemigos/Necromancer/atk2/tile017.png" id="123_b4g77"]
+[ext_resource type="Texture2D" uid="uid://ur8edrk8w5in" path="res://personajes/Enemigos/Necromancer/atk2/tile018.png" id="124_8fk0d"]
+[ext_resource type="Texture2D" uid="uid://dmootf2dswx82" path="res://personajes/Enemigos/Necromancer/atk2/tile019.png" id="125_eovul"]
+[ext_resource type="Texture2D" uid="uid://bov5q5r1ibeno" path="res://personajes/Enemigos/Necromancer/atk1/tile000.png" id="126_sschp"]
+[ext_resource type="Texture2D" uid="uid://hir81fx0ait6" path="res://personajes/Enemigos/Necromancer/atk1/tile001.png" id="127_jxbyf"]
+[ext_resource type="Texture2D" uid="uid://blful7eo07ehf" path="res://personajes/Enemigos/Necromancer/atk1/tile002.png" id="128_dvsw5"]
+[ext_resource type="Texture2D" uid="uid://c7a6sgjikkmv7" path="res://personajes/Enemigos/Necromancer/atk1/tile003.png" id="129_0oj0q"]
+[ext_resource type="Texture2D" uid="uid://cuei42tkb3540" path="res://personajes/Enemigos/Necromancer/atk1/tile004.png" id="130_xx8yg"]
+[ext_resource type="Texture2D" uid="uid://bux13tjqhfo7y" path="res://personajes/Enemigos/Necromancer/atk1/tile005.png" id="131_ih5ph"]
+[ext_resource type="Texture2D" uid="uid://dfjbbsl2cld6m" path="res://personajes/Enemigos/Necromancer/atk1/tile006.png" id="132_3gpd7"]
+[ext_resource type="Texture2D" uid="uid://vkw56oy1damr" path="res://personajes/Enemigos/Necromancer/atk1/tile007.png" id="133_5ny7p"]
+[ext_resource type="Texture2D" uid="uid://yj47vennsfv6" path="res://personajes/Enemigos/Necromancer/atk1/tile008.png" id="134_oxwbi"]
+[ext_resource type="Texture2D" uid="uid://dskn1bo8bwfth" path="res://personajes/Enemigos/Necromancer/atk1/tile009.png" id="135_03vxa"]
+[ext_resource type="Texture2D" uid="uid://6plg4yfs75qo" path="res://personajes/Enemigos/Necromancer/atk1/tile010.png" id="136_ojnth"]
+[ext_resource type="Texture2D" uid="uid://bxtqkjsr6doq2" path="res://personajes/Enemigos/Necromancer/atk1/tile011.png" id="137_ngx00"]
+[ext_resource type="Texture2D" uid="uid://cukak0allubfj" path="res://personajes/Enemigos/Necromancer/atk1/tile012.png" id="138_qfptg"]
+[ext_resource type="Texture2D" uid="uid://dcyjur4jev2nj" path="res://personajes/Enemigos/Necromancer/atk1/tile013.png" id="139_mn617"]
+[ext_resource type="Texture2D" uid="uid://bbsdyrft4dfht" path="res://personajes/Enemigos/Necromancer/atk1/tile014.png" id="140_c15xd"]
+[ext_resource type="Texture2D" uid="uid://cjscjurx0m8a2" path="res://personajes/Enemigos/Necromancer/atk1/tile015.png" id="141_rhwhw"]
+[ext_resource type="Texture2D" uid="uid://dv4pi8dmkwhg3" path="res://personajes/Enemigos/Necromancer/atk1/tile016.png" id="142_u8p4r"]
+[ext_resource type="Texture2D" uid="uid://bgaiv7eibnmoh" path="res://personajes/Enemigos/Necromancer/atk1/tile017.png" id="143_r0exx"]
+[ext_resource type="Texture2D" uid="uid://bwsnib84s547x" path="res://personajes/Enemigos/Necromancer/atk1/tile018.png" id="144_db02k"]
+[ext_resource type="Texture2D" uid="uid://br44gcjc827mm" path="res://personajes/Enemigos/Necromancer/atk1/tile019.png" id="145_gwarj"]
+[ext_resource type="Texture2D" uid="uid://cupnxvybx86dv" path="res://personajes/Enemigos/Necromancer/atk1/tile020.png" id="146_pvyya"]
+[ext_resource type="Texture2D" uid="uid://ce8yhcw2ltw52" path="res://personajes/Enemigos/Necromancer/atk1/tile021.png" id="147_o5qqx"]
+[ext_resource type="Texture2D" uid="uid://b061xg0tiecg1" path="res://personajes/Enemigos/Necromancer/atk1/tile022.png" id="148_ibrqd"]
+[ext_resource type="Texture2D" uid="uid://b3gttilfc37xf" path="res://personajes/Enemigos/Necromancer/atk1/tile023.png" id="149_xxwmf"]
+[ext_resource type="Texture2D" uid="uid://b6i2h70fv0gtf" path="res://personajes/Enemigos/Necromancer/atk1/tile024.png" id="150_vss2m"]
+[ext_resource type="Texture2D" uid="uid://hppaychlrx4c" path="res://personajes/Enemigos/Necromancer/atk1/tile025.png" id="151_fi8ts"]
+[ext_resource type="Texture2D" uid="uid://f7flwv3b6gkw" path="res://personajes/Enemigos/Necromancer/atk1/tile026.png" id="152_bo5or"]
+[ext_resource type="Texture2D" uid="uid://cmr70lrc5ui4n" path="res://personajes/Enemigos/Necromancer/atk1/tile027.png" id="153_ond5i"]
+[ext_resource type="Texture2D" uid="uid://be88ch0m1nywx" path="res://personajes/Enemigos/Necromancer/atk1/tile028.png" id="154_j21l4"]
+[ext_resource type="Texture2D" uid="uid://b62hctabkh3wf" path="res://personajes/Enemigos/Necromancer/atk1/tile029.png" id="155_x5p3a"]
+[ext_resource type="Texture2D" uid="uid://sod2fbs4ug48" path="res://personajes/Enemigos/Necromancer/atk1/tile030.png" id="156_ffdap"]
+[ext_resource type="Texture2D" uid="uid://c3mq16x1xkwy8" path="res://personajes/Enemigos/Necromancer/atk1/tile031.png" id="157_foqwm"]
+[ext_resource type="Texture2D" uid="uid://cyfb5kppkg5ji" path="res://personajes/Enemigos/Necromancer/atk1/tile032.png" id="158_0pn03"]
+[ext_resource type="Texture2D" uid="uid://cp33wiht8deaq" path="res://personajes/Enemigos/Necromancer/atk1/tile033.png" id="159_gslch"]
+[ext_resource type="Texture2D" uid="uid://c2d85utjfw6q5" path="res://personajes/Enemigos/Necromancer/atk1/tile034.png" id="160_j6cx1"]
+[ext_resource type="Texture2D" uid="uid://b24ncfgoor1yx" path="res://personajes/Enemigos/Necromancer/atk1/tile035.png" id="161_w76kr"]
+[ext_resource type="Texture2D" uid="uid://byx87vhqnp138" path="res://personajes/Enemigos/Necromancer/atk1/tile036.png" id="162_2f6ma"]
+[ext_resource type="Texture2D" uid="uid://drrq1ootc2nbs" path="res://personajes/Enemigos/Necromancer/atk1/tile037.png" id="163_gpl1t"]
+[ext_resource type="Texture2D" uid="uid://cngaxfobaavid" path="res://personajes/Enemigos/Necromancer/atk1/tile038.png" id="164_261v4"]
+[ext_resource type="Texture2D" uid="uid://bymj3jrne52he" path="res://personajes/Enemigos/Necromancer/atk1/tile039.png" id="165_rgo88"]
+[ext_resource type="Texture2D" uid="uid://vqtvb35ry7e7" path="res://personajes/Enemigos/Necromancer/atk1/tile040.png" id="166_t6pj4"]
+[ext_resource type="Texture2D" uid="uid://b4jfam1gnofk6" path="res://personajes/Enemigos/Necromancer/atk1/tile041.png" id="167_bkcc0"]
+[ext_resource type="Texture2D" uid="uid://blh37brifich1" path="res://personajes/Enemigos/Necromancer/atk1/tile042.png" id="168_qcmdf"]
+[ext_resource type="Texture2D" uid="uid://dekj14ycllrv8" path="res://personajes/Enemigos/Necromancer/atk1/tile043.png" id="169_jiimp"]
+[ext_resource type="Texture2D" uid="uid://det2axm32fy6a" path="res://personajes/Enemigos/Necromancer/atk1/tile044.png" id="170_vsfjj"]
+[ext_resource type="Texture2D" uid="uid://d3abplglo7e1u" path="res://personajes/Enemigos/Necromancer/atk1/tile045.png" id="171_suo68"]
+[ext_resource type="Texture2D" uid="uid://7ly2qdsko00q" path="res://personajes/Enemigos/Necromancer/atk1/tile046.png" id="172_inmg0"]
 
 [sub_resource type="Animation" id="Animation_4rkju"]
 resource_name = "necro_idle"
+length = 4.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_8yep8"), ExtResource("3_ojmvp"), ExtResource("4_8wuu1"), ExtResource("5_4sb11"), ExtResource("6_eejom"), ExtResource("7_xf0ca"), ExtResource("8_q1fu6"), ExtResource("9_swkb5"), ExtResource("10_bn4wo"), ExtResource("11_byas0"), ExtResource("12_3i4eq"), ExtResource("13_p5f1i"), ExtResource("14_6qpco"), ExtResource("15_tvaxj"), ExtResource("16_y8kx6"), ExtResource("17_2i2ew"), ExtResource("18_i5wgn"), ExtResource("19_cb6m4"), ExtResource("20_aagp4"), ExtResource("21_h8gri"), ExtResource("22_xqbua"), ExtResource("23_t7e88"), ExtResource("24_kspft"), ExtResource("25_drywa"), ExtResource("26_c8bbf"), ExtResource("27_hlpde"), ExtResource("28_q6wcs"), ExtResource("29_h8rto"), ExtResource("30_xp3em"), ExtResource("31_mg76i"), ExtResource("32_2ugch"), ExtResource("33_4ym0s"), ExtResource("34_g6gt7"), ExtResource("35_g0tdc"), ExtResource("36_gwubp"), ExtResource("37_kmu7b"), ExtResource("38_ijkdl"), ExtResource("39_yiqst"), ExtResource("40_hlbsg"), ExtResource("41_60oie"), ExtResource("42_s7xvt"), ExtResource("43_u3r47"), ExtResource("44_txdib"), ExtResource("45_sselu"), ExtResource("46_ohyhk"), ExtResource("47_h6ypo"), ExtResource("48_ct31j"), ExtResource("49_vyrde"), ExtResource("50_phm8v"), ExtResource("51_01ldc")]
+}
+
+[sub_resource type="Animation" id="Animation_xkwu1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_8yep8")]
+}
+
+[sub_resource type="Animation" id="Animation_515ej"]
+resource_name = "necro_hurt"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("52_dxsnl"), ExtResource("53_h6tnv"), ExtResource("54_shr1q"), ExtResource("55_myqvl"), ExtResource("56_20ea7"), ExtResource("57_mjose"), ExtResource("58_81iu1"), ExtResource("59_okq0j"), ExtResource("60_pdli7")]
+}
+
+[sub_resource type="Animation" id="Animation_xiybo"]
+resource_name = "necro_death"
+length = 5.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("61_uxm70"), ExtResource("62_uqv6o"), ExtResource("63_xnxg6"), ExtResource("64_312br"), ExtResource("65_j0bn2"), ExtResource("66_pxxil"), ExtResource("67_lcaa1"), ExtResource("68_hlg3o"), ExtResource("69_7nu6i"), ExtResource("70_lygf0"), ExtResource("71_sf0be"), ExtResource("72_35srk"), ExtResource("73_ls2en"), ExtResource("74_n75t4"), ExtResource("75_p8we8"), ExtResource("76_tntvj"), ExtResource("77_aqw22"), ExtResource("78_ygadx"), ExtResource("79_1whvk"), ExtResource("80_n4ayc"), ExtResource("81_2j10b"), ExtResource("82_8ebsp"), ExtResource("83_ebtmt"), ExtResource("84_uasqv"), ExtResource("85_3lkbj"), ExtResource("86_deioc"), ExtResource("87_t15vn"), ExtResource("88_6a7qh"), ExtResource("89_uxrbv"), ExtResource("90_ybsgk"), ExtResource("91_hbc61"), ExtResource("92_euxk6"), ExtResource("93_ajltp"), ExtResource("94_dmrcj"), ExtResource("95_0k56m"), ExtResource("96_h0d58"), ExtResource("97_c43xx"), ExtResource("98_brg3b"), ExtResource("99_r30ho"), ExtResource("100_fpgo4"), ExtResource("101_xdg8b"), ExtResource("102_hqpug"), ExtResource("103_mwbmn"), ExtResource("104_cf5u7"), ExtResource("105_sesne"), ExtResource("106_2h3cp")]
+}
+
+[sub_resource type="Animation" id="Animation_l1wey"]
+resource_name = "necro_atk2"
+length = 1.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("107_amcke"), ExtResource("108_7hcer"), ExtResource("109_ngbo0"), ExtResource("110_m6e6r"), ExtResource("111_voqwe"), ExtResource("112_whivu"), ExtResource("113_tpt6n"), ExtResource("114_1wjdl"), ExtResource("115_7p3o3"), ExtResource("116_ujnmo"), ExtResource("117_hl7oq"), ExtResource("118_5hen2"), ExtResource("119_34elx"), ExtResource("120_wpuye"), ExtResource("121_0pj76"), ExtResource("122_s8d63"), ExtResource("123_b4g77"), ExtResource("124_8fk0d"), ExtResource("125_eovul")]
+}
+
+[sub_resource type="Animation" id="Animation_c7fuo"]
+resource_name = "necro_atk1"
+length = 4.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("126_sschp"), ExtResource("127_jxbyf"), ExtResource("128_dvsw5"), ExtResource("129_0oj0q"), ExtResource("130_xx8yg"), ExtResource("131_ih5ph"), ExtResource("132_3gpd7"), ExtResource("133_5ny7p"), ExtResource("134_oxwbi"), ExtResource("135_03vxa"), ExtResource("136_ojnth"), ExtResource("137_ngx00"), ExtResource("138_qfptg"), ExtResource("139_mn617"), ExtResource("140_c15xd"), ExtResource("141_rhwhw"), ExtResource("142_u8p4r"), ExtResource("143_r0exx"), ExtResource("144_db02k"), ExtResource("145_gwarj"), ExtResource("146_pvyya"), ExtResource("147_o5qqx"), ExtResource("148_ibrqd"), ExtResource("149_xxwmf"), ExtResource("150_vss2m"), ExtResource("151_fi8ts"), ExtResource("152_bo5or"), ExtResource("153_ond5i"), ExtResource("154_j21l4"), ExtResource("155_x5p3a"), ExtResource("156_ffdap"), ExtResource("157_foqwm"), ExtResource("158_0pn03"), ExtResource("159_gslch"), ExtResource("160_j6cx1"), ExtResource("161_w76kr"), ExtResource("162_2f6ma"), ExtResource("163_gpl1t"), ExtResource("164_261v4"), ExtResource("165_rgo88"), ExtResource("166_t6pj4"), ExtResource("167_bkcc0"), ExtResource("168_qcmdf"), ExtResource("169_jiimp"), ExtResource("170_vsfjj"), ExtResource("171_suo68"), ExtResource("172_inmg0")]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v8bot"]
 _data = {
+"RESET": SubResource("Animation_xkwu1"),
+"necro_atk1": SubResource("Animation_c7fuo"),
+"necro_atk2": SubResource("Animation_l1wey"),
+"necro_death": SubResource("Animation_xiybo"),
+"necro_hurt": SubResource("Animation_515ej"),
 "necro_idle": SubResource("Animation_4rkju")
 }
 
