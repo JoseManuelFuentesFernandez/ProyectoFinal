@@ -1,6 +1,7 @@
 extends Node
 
 @onready var accept_dialog = $AcceptDialog
+@onready var reset_dialog = $ResetDialog
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -28,3 +29,15 @@ func _on_accept_dialog_confirmed():
 func _on_accept_dialog_canceled():
 	accept_dialog.visible = false
 
+
+func _on_reset_button_pressed():
+	reset_dialog.popup_centered()
+
+
+func _on_reset_dialog_confirmed():
+	data.reset_progress()
+	data.load_progress()
+
+
+func _on_reset_dialog_canceled():
+	reset_dialog.visible = false
