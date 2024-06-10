@@ -17,7 +17,7 @@ func _ready():
 	var level_multiplier = data.level
 	atk = base_atk * level_multiplier
 	armor = base_armor * level_multiplier
-	health = base_health * level_multiplier
+	_health = base_health * level_multiplier
 
 	animation_player.connect("animation_finished", Callable(self, "_on_animation_finished"))
 	animation_player.play("swordman_idle")

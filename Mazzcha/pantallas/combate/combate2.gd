@@ -79,7 +79,7 @@ func _enemy_turn():
 		0:
 			damage = enemy._atk1()
 		1:
-			damage = enemy._atk2()*1.5
+			damage = enemy._atk2()
 	main_character._hurt(_calculate_damage(damage, main_character.armor))
 	if main_character.health > 0:
 		_start_player_turn()

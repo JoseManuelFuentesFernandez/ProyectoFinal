@@ -34,7 +34,7 @@ func load_progress():
 		if error == OK:
 			var json_data = json.data
 			selected_character = json_data.get("selected_character", -1)
-			level = json_data.get("level", 0)
+			level = json_data.get("level", 1)
 			print("Datos cargados exitosamente desde %s" % SAVE_GAME_PATH)
 		else:
 			print("Error al parsear el JSON: %s en la línea %d" % [json.get_error_message(), json.get_error_line()])
