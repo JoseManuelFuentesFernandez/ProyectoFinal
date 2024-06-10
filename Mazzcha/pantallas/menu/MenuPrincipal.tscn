@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bn7qhyg3nnvym"]
+[gd_scene load_steps=9 format=3 uid="uid://bn7qhyg3nnvym"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_qmr4p"]
 [ext_resource type="Texture2D" uid="uid://dby5n0bkrldii" path="res://pantallas/menu/fondo/background-main.png" id="1_qq673"]
 [ext_resource type="Texture2D" uid="uid://du5nni6o0pxm2" path="res://pantallas/menu/botones/boton-jugar-removebg-preview.png" id="1_s8xiu"]
 [ext_resource type="Texture2D" uid="uid://bh4a5wt1n166x" path="res://pantallas/menu/botones/boton-jugar-removebg-preview-pressed.png" id="2_3ppa1"]
+[ext_resource type="Texture2D" uid="uid://2him7okuuv0r" path="res://pantallas/menu/botones/boton-salir.png" id="5_ykgjb"]
 
 [sub_resource type="Animation" id="Animation_tq7a8"]
 length = 0.001
@@ -116,10 +117,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -133.0
-offset_top = -44.0
-offset_right = 170.0
-offset_bottom = 88.0
+offset_left = -153.0
+offset_top = -64.0
+offset_right = 150.0
+offset_bottom = 68.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
@@ -134,4 +135,30 @@ libraries = {
 }
 autoplay = "play_button"
 
+[node name="ExitButton" type="TextureButton" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = 428.0
+offset_right = -1.0
+offset_bottom = 460.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+texture_normal = ExtResource("5_ykgjb")
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+title = "Salir"
+size = Vector2i(260, 100)
+ok_button_text = "Sí"
+dialog_text = "¿Estás seguro que quieres salir?"
+
 [connection signal="pressed" from="Control/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Control/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="canceled" from="AcceptDialog" to="." method="_on_accept_dialog_canceled"]
+[connection signal="confirmed" from="AcceptDialog" to="." method="_on_accept_dialog_confirmed"]

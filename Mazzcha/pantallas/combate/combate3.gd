@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var bg4 = $bg3
+@onready var bg3 = $bg3
 @onready var main_character = $MainCharacter
 @onready var enemy = $Enemy3
 @onready var options = $CanvasLayer/options
