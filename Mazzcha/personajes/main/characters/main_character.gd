@@ -13,6 +13,7 @@ var armor : int
 var _health : float
 
 func _ready():
+	data.load_progress()
 	var level_multiplier = data.level
 	atk = base_atk * level_multiplier
 	armor = base_armor * level_multiplier

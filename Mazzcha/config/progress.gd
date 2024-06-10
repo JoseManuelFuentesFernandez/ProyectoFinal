@@ -3,9 +3,8 @@ extends Node
 
 const SAVE_GAME_PATH := "res://data/data.json"
 
-@export var selected_character : int = -1
-@export var level : int = 1
-
+@export var selected_character : int
+@export var level : int
 
 func _init():
 	# Intenta cargar los datos al inicializar la clase
@@ -31,14 +30,14 @@ func load_progress():
 	var file = FileAccess.open(SAVE_GAME_PATH, FileAccess.READ)
 	if file:
 		var json = JSON.new()
-		var data = json.parse(file.get_as_text())
-		if data.error == OK:
-			var json_data = data.result
+		var error = json.parse(file.get_as_text())
+		if error == OK:
+			var json_data = json.data
 			selected_character = json_data.get("selected_character", -1)
 			level = json_data.get("level", 0)
 			print("Datos cargados exitosamente desde %s" % SAVE_GAME_PATH)
 		else:
-			print("Error al parsear el JSON: %s" % data.error_string)
+			print("Error al parsear el JSON: %s en la línea %d" % [json.get_error_message(), json.get_error_line()])
 		file.close()
 	else:
 		print("El archivo %s no existe o no se pudo abrir." % SAVE_GAME_PATH)

@@ -1,8 +1,8 @@
 extends Node2D
 
-@onready var bg4 = $bg4
+@onready var bg1 = $bg1
 @onready var main_character = $MainCharacter
-@onready var enemy = $enemy4
+@onready var enemy = $Enemy1
 @onready var options = $CanvasLayer/options
 @onready var exit_confirmation_dialog = $ExitConfirmationDialog
 @onready var result_dialog = $ResultDialog
@@ -26,7 +26,13 @@ func _process(delta):
 	if enemy.health <= 0:
 		result_dialog.title = "Victoria"
 		result_dialog.ok_button_text = "Continuar"
-		result_dialog.dialog_text = "¡Has ganado! Enhorabuena, has terminado el juego"
+		if data.level < 2:
+			result_dialog.dialog_text = "¡Has ganado y subido de nivel!"
+			data.level = 2
+			data.save_progress()
+		else:
+			result_dialog.dialog_text = "¡Has ganado!"
+		
 		result_dialog.popup_centered()
 		return
 
@@ -67,13 +73,7 @@ func _end_player_turn():
 	options.visible = false
 
 func _enemy_turn():
-	var attack_type = randi() % 2
-	var damage
-	match attack_type:
-		0:
-			damage = enemy._atk1()
-		1:
-			damage = enemy._atk2()*1.5
+	var damage = enemy._atk1()
 	main_character._hurt(_calculate_damage(damage, main_character.armor))
 	if main_character.health > 0:
 		_start_player_turn()

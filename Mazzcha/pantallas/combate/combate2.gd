@@ -1,8 +1,8 @@
 extends Node2D
 
-@onready var bg4 = $bg4
+@onready var bg4 = $bg2
 @onready var main_character = $MainCharacter
-@onready var enemy = $enemy4
+@onready var enemy = $Enemy2
 @onready var options = $CanvasLayer/options
 @onready var exit_confirmation_dialog = $ExitConfirmationDialog
 @onready var result_dialog = $ResultDialog
@@ -26,7 +26,13 @@ func _process(delta):
 	if enemy.health <= 0:
 		result_dialog.title = "Victoria"
 		result_dialog.ok_button_text = "Continuar"
-		result_dialog.dialog_text = "¡Has ganado! Enhorabuena, has terminado el juego"
+		if data.level < 3:
+			result_dialog.dialog_text = "¡Has ganado y subido de nivel!"
+			data.level = 3
+			data.save_progress()
+		else:
+			result_dialog.dialog_text = "¡Has ganado!"
+		
 		result_dialog.popup_centered()
 		return
 

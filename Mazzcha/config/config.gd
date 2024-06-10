@@ -16,18 +16,18 @@ class Config:
 	const wizard_base_health = 15
 
 	#ENEMIES
-	const enemy1_atk = 5
+	const enemy1_atk = 8
 	const enemy1_armor = 25
 	const enemy1_health = 25
 
-	const enemy2_atk = 45
+	const enemy2_atk = 17
 	const enemy2_armor = 20
-	const enemy2_health = 45
+	const enemy2_health = 40
 	
-	const enemy3_atk = 45
-	const enemy3_armor = 40
-	const enemy3_health = 60
+	const enemy3_atk = 40
+	const enemy3_armor = 55
+	const enemy3_health = 70
 	
-	const enemy4_atk = 65
-	const enemy4_armor = 75
-	const enemy4_health = 20
+	const enemy4_atk = 80
+	const enemy4_armor = 85
+	const enemy4_health = 100

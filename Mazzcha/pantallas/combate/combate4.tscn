@@ -63,6 +63,7 @@ text = "Habilidad"
 layout_mode = 2
 text = "Huir"
 
+[connection signal="confirmed" from="ResultDialog" to="." method="_on_result_dialog_confirmed"]
 [connection signal="pressed" from="CanvasLayer/options/atk1" to="." method="_on_atk_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/options/atk2" to="." method="_on_atk_2_pressed"]
 [connection signal="pressed" from="CanvasLayer/options/ability" to="." method="_on_ability_pressed"]

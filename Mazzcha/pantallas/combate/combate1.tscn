@@ -1,12 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://cvjicuegv5v6d"]
+[gd_scene load_steps=5 format=3 uid="uid://cvjicuegv5v6d"]
 
+[ext_resource type="Script" path="res://pantallas/combate/combate1.gd" id="1_k22kn"]
 [ext_resource type="Texture2D" uid="uid://dsvvimit20ioe" path="res://pantallas/mazmorras/Battleground1/Bright/Battleground1.png" id="1_lg30o"]
 [ext_resource type="PackedScene" uid="uid://1u8fu60wg640" path="res://personajes/main/characters/main_character.tscn" id="2_epkx5"]
 [ext_resource type="PackedScene" uid="uid://c8g8a1u4mmju0" path="res://personajes/Enemigos/enemy1.tscn" id="3_krd7f"]
 
 [node name="Combate1" type="Node2D"]
+script = ExtResource("1_k22kn")
 
 [node name="bg1" type="TextureRect" parent="."]
+modulate = Color(0.741176, 0.741176, 0.741176, 1)
 show_behind_parent = true
 offset_right = 896.0
 offset_bottom = 1078.0
@@ -14,11 +17,11 @@ texture = ExtResource("1_lg30o")
 expand_mode = 3
 
 [node name="MainCharacter" parent="." instance=ExtResource("2_epkx5")]
-position = Vector2(565, 673)
+position = Vector2(585, 667)
 slide_on_ceiling = false
 
 [node name="Enemy1" parent="." instance=ExtResource("3_krd7f")]
-position = Vector2(1387, 669)
+position = Vector2(1381, 651)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -48,3 +51,21 @@ text = "Habilidad"
 [node name="scape" type="Button" parent="CanvasLayer/options"]
 layout_mode = 2
 text = "Huir"
+
+[node name="ExitConfirmationDialog" type="AcceptDialog" parent="."]
+title = "Huir"
+size = Vector2i(200, 100)
+ok_button_text = "Sí"
+dialog_text = "¿Estás seguro?"
+
+[node name="ResultDialog" type="AcceptDialog" parent="."]
+title = "Huir"
+size = Vector2i(200, 100)
+ok_button_text = "Sí"
+dialog_text = "¿Estás seguro?"
+
+[connection signal="pressed" from="CanvasLayer/options/atk1" to="." method="_on_atk_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/options/atk2" to="." method="_on_atk_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/options/ability" to="." method="_on_ability_pressed"]
+[connection signal="pressed" from="CanvasLayer/options/scape" to="." method="_on_scape_pressed"]
+[connection signal="confirmed" from="ResultDialog" to="." method="_on_result_dialog_confirmed"]
