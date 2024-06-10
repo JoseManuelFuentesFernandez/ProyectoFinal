@@ -34,17 +34,16 @@ func _atk2() -> int:
 
 func _hurt(damage: int):
 	health -= damage
-	if health <= 0:
-		health = 0
-		animation_player.play("king_death")
-	else:
-		animation_player.play("king_hurt")
+	animation_player.play("king_hurt")
 	_update_progress_bar()
 
 func _on_animation_finished(anim_name: String):
 	if anim_name == "king_death":
-		pass
-	elif anim_name in ["king_atk", "king_atk2", "king_hurt"]:
+		animation_player.pause()
+	elif anim_name == "king_hurt" && health <= 0:
+		animation_player.play("king_death")
+		return
+	elif anim_name in ["king_atk1", "king_atk2", "king_hurt"]:
 		animation_player.play("king_idle")
 
 func set_health(value):

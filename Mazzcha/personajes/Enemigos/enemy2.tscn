@@ -173,23 +173,6 @@
 [ext_resource type="Texture2D" uid="uid://d3abplglo7e1u" path="res://personajes/Enemigos/Necromancer/atk1/tile045.png" id="171_suo68"]
 [ext_resource type="Texture2D" uid="uid://7ly2qdsko00q" path="res://personajes/Enemigos/Necromancer/atk1/tile046.png" id="172_inmg0"]
 
-[sub_resource type="Animation" id="Animation_4rkju"]
-resource_name = "necro_idle"
-length = 4.9
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("1_8yep8"), ExtResource("3_ojmvp"), ExtResource("4_8wuu1"), ExtResource("5_4sb11"), ExtResource("6_eejom"), ExtResource("7_xf0ca"), ExtResource("8_q1fu6"), ExtResource("9_swkb5"), ExtResource("10_bn4wo"), ExtResource("11_byas0"), ExtResource("12_3i4eq"), ExtResource("13_p5f1i"), ExtResource("14_6qpco"), ExtResource("15_tvaxj"), ExtResource("16_y8kx6"), ExtResource("17_2i2ew"), ExtResource("18_i5wgn"), ExtResource("19_cb6m4"), ExtResource("20_aagp4"), ExtResource("21_h8gri"), ExtResource("22_xqbua"), ExtResource("23_t7e88"), ExtResource("24_kspft"), ExtResource("25_drywa"), ExtResource("26_c8bbf"), ExtResource("27_hlpde"), ExtResource("28_q6wcs"), ExtResource("29_h8rto"), ExtResource("30_xp3em"), ExtResource("31_mg76i"), ExtResource("32_2ugch"), ExtResource("33_4ym0s"), ExtResource("34_g6gt7"), ExtResource("35_g0tdc"), ExtResource("36_gwubp"), ExtResource("37_kmu7b"), ExtResource("38_ijkdl"), ExtResource("39_yiqst"), ExtResource("40_hlbsg"), ExtResource("41_60oie"), ExtResource("42_s7xvt"), ExtResource("43_u3r47"), ExtResource("44_txdib"), ExtResource("45_sselu"), ExtResource("46_ohyhk"), ExtResource("47_h6ypo"), ExtResource("48_ct31j"), ExtResource("49_vyrde"), ExtResource("50_phm8v"), ExtResource("51_01ldc")]
-}
-
 [sub_resource type="Animation" id="Animation_xkwu1"]
 length = 0.001
 tracks/0/type = "value"
@@ -205,9 +188,9 @@ tracks/0/keys = {
 "values": [ExtResource("1_8yep8")]
 }
 
-[sub_resource type="Animation" id="Animation_515ej"]
-resource_name = "necro_hurt"
-length = 1.5
+[sub_resource type="Animation" id="Animation_c7fuo"]
+resource_name = "necro_atk1"
+length = 4.6
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -215,26 +198,10 @@ tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("52_dxsnl"), ExtResource("53_h6tnv"), ExtResource("54_shr1q"), ExtResource("55_myqvl"), ExtResource("56_20ea7"), ExtResource("57_mjose"), ExtResource("58_81iu1"), ExtResource("59_okq0j"), ExtResource("60_pdli7")]
-}
-
-[sub_resource type="Animation" id="Animation_xiybo"]
-resource_name = "necro_death"
-length = 5.1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("61_uxm70"), ExtResource("62_uqv6o"), ExtResource("63_xnxg6"), ExtResource("64_312br"), ExtResource("65_j0bn2"), ExtResource("66_pxxil"), ExtResource("67_lcaa1"), ExtResource("68_hlg3o"), ExtResource("69_7nu6i"), ExtResource("70_lygf0"), ExtResource("71_sf0be"), ExtResource("72_35srk"), ExtResource("73_ls2en"), ExtResource("74_n75t4"), ExtResource("75_p8we8"), ExtResource("76_tntvj"), ExtResource("77_aqw22"), ExtResource("78_ygadx"), ExtResource("79_1whvk"), ExtResource("80_n4ayc"), ExtResource("81_2j10b"), ExtResource("82_8ebsp"), ExtResource("83_ebtmt"), ExtResource("84_uasqv"), ExtResource("85_3lkbj"), ExtResource("86_deioc"), ExtResource("87_t15vn"), ExtResource("88_6a7qh"), ExtResource("89_uxrbv"), ExtResource("90_ybsgk"), ExtResource("91_hbc61"), ExtResource("92_euxk6"), ExtResource("93_ajltp"), ExtResource("94_dmrcj"), ExtResource("95_0k56m"), ExtResource("96_h0d58"), ExtResource("97_c43xx"), ExtResource("98_brg3b"), ExtResource("99_r30ho"), ExtResource("100_fpgo4"), ExtResource("101_xdg8b"), ExtResource("102_hqpug"), ExtResource("103_mwbmn"), ExtResource("104_cf5u7"), ExtResource("105_sesne"), ExtResource("106_2h3cp")]
+"values": [ExtResource("126_sschp"), ExtResource("127_jxbyf"), ExtResource("128_dvsw5"), ExtResource("129_0oj0q"), ExtResource("130_xx8yg"), ExtResource("131_ih5ph"), ExtResource("132_3gpd7"), ExtResource("133_5ny7p"), ExtResource("134_oxwbi"), ExtResource("135_03vxa"), ExtResource("136_ojnth"), ExtResource("137_ngx00"), ExtResource("138_qfptg"), ExtResource("139_mn617"), ExtResource("140_c15xd"), ExtResource("141_rhwhw"), ExtResource("142_u8p4r"), ExtResource("143_r0exx"), ExtResource("144_db02k"), ExtResource("145_gwarj"), ExtResource("146_pvyya"), ExtResource("147_o5qqx"), ExtResource("148_ibrqd"), ExtResource("149_xxwmf"), ExtResource("150_vss2m"), ExtResource("151_fi8ts"), ExtResource("152_bo5or"), ExtResource("153_ond5i"), ExtResource("154_j21l4"), ExtResource("155_x5p3a"), ExtResource("156_ffdap"), ExtResource("157_foqwm"), ExtResource("158_0pn03"), ExtResource("159_gslch"), ExtResource("160_j6cx1"), ExtResource("161_w76kr"), ExtResource("162_2f6ma"), ExtResource("163_gpl1t"), ExtResource("164_261v4"), ExtResource("165_rgo88"), ExtResource("166_t6pj4"), ExtResource("167_bkcc0"), ExtResource("168_qcmdf"), ExtResource("169_jiimp"), ExtResource("170_vsfjj"), ExtResource("171_suo68"), ExtResource("172_inmg0")]
 }
 
 [sub_resource type="Animation" id="Animation_l1wey"]
@@ -253,9 +220,9 @@ tracks/0/keys = {
 "values": [ExtResource("107_amcke"), ExtResource("108_7hcer"), ExtResource("109_ngbo0"), ExtResource("110_m6e6r"), ExtResource("111_voqwe"), ExtResource("112_whivu"), ExtResource("113_tpt6n"), ExtResource("114_1wjdl"), ExtResource("115_7p3o3"), ExtResource("116_ujnmo"), ExtResource("117_hl7oq"), ExtResource("118_5hen2"), ExtResource("119_34elx"), ExtResource("120_wpuye"), ExtResource("121_0pj76"), ExtResource("122_s8d63"), ExtResource("123_b4g77"), ExtResource("124_8fk0d"), ExtResource("125_eovul")]
 }
 
-[sub_resource type="Animation" id="Animation_c7fuo"]
-resource_name = "necro_atk1"
-length = 4.6
+[sub_resource type="Animation" id="Animation_xiybo"]
+resource_name = "necro_death"
+length = 5.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -263,10 +230,43 @@ tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("126_sschp"), ExtResource("127_jxbyf"), ExtResource("128_dvsw5"), ExtResource("129_0oj0q"), ExtResource("130_xx8yg"), ExtResource("131_ih5ph"), ExtResource("132_3gpd7"), ExtResource("133_5ny7p"), ExtResource("134_oxwbi"), ExtResource("135_03vxa"), ExtResource("136_ojnth"), ExtResource("137_ngx00"), ExtResource("138_qfptg"), ExtResource("139_mn617"), ExtResource("140_c15xd"), ExtResource("141_rhwhw"), ExtResource("142_u8p4r"), ExtResource("143_r0exx"), ExtResource("144_db02k"), ExtResource("145_gwarj"), ExtResource("146_pvyya"), ExtResource("147_o5qqx"), ExtResource("148_ibrqd"), ExtResource("149_xxwmf"), ExtResource("150_vss2m"), ExtResource("151_fi8ts"), ExtResource("152_bo5or"), ExtResource("153_ond5i"), ExtResource("154_j21l4"), ExtResource("155_x5p3a"), ExtResource("156_ffdap"), ExtResource("157_foqwm"), ExtResource("158_0pn03"), ExtResource("159_gslch"), ExtResource("160_j6cx1"), ExtResource("161_w76kr"), ExtResource("162_2f6ma"), ExtResource("163_gpl1t"), ExtResource("164_261v4"), ExtResource("165_rgo88"), ExtResource("166_t6pj4"), ExtResource("167_bkcc0"), ExtResource("168_qcmdf"), ExtResource("169_jiimp"), ExtResource("170_vsfjj"), ExtResource("171_suo68"), ExtResource("172_inmg0")]
+"values": [ExtResource("61_uxm70"), ExtResource("62_uqv6o"), ExtResource("63_xnxg6"), ExtResource("64_312br"), ExtResource("65_j0bn2"), ExtResource("66_pxxil"), ExtResource("67_lcaa1"), ExtResource("68_hlg3o"), ExtResource("69_7nu6i"), ExtResource("70_lygf0"), ExtResource("71_sf0be"), ExtResource("72_35srk"), ExtResource("73_ls2en"), ExtResource("74_n75t4"), ExtResource("75_p8we8"), ExtResource("76_tntvj"), ExtResource("77_aqw22"), ExtResource("78_ygadx"), ExtResource("79_1whvk"), ExtResource("80_n4ayc"), ExtResource("81_2j10b"), ExtResource("82_8ebsp"), ExtResource("83_ebtmt"), ExtResource("84_uasqv"), ExtResource("85_3lkbj"), ExtResource("86_deioc"), ExtResource("87_t15vn"), ExtResource("88_6a7qh"), ExtResource("89_uxrbv"), ExtResource("90_ybsgk"), ExtResource("91_hbc61"), ExtResource("92_euxk6"), ExtResource("93_ajltp"), ExtResource("94_dmrcj"), ExtResource("95_0k56m"), ExtResource("96_h0d58"), ExtResource("97_c43xx"), ExtResource("98_brg3b"), ExtResource("99_r30ho"), ExtResource("100_fpgo4"), ExtResource("101_xdg8b"), ExtResource("102_hqpug"), ExtResource("103_mwbmn"), ExtResource("104_cf5u7"), ExtResource("105_sesne"), ExtResource("106_2h3cp")]
+}
+
+[sub_resource type="Animation" id="Animation_515ej"]
+resource_name = "necro_hurt"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("52_dxsnl"), ExtResource("53_h6tnv"), ExtResource("54_shr1q"), ExtResource("55_myqvl"), ExtResource("56_20ea7"), ExtResource("57_mjose"), ExtResource("58_81iu1"), ExtResource("59_okq0j"), ExtResource("60_pdli7")]
+}
+
+[sub_resource type="Animation" id="Animation_4rkju"]
+resource_name = "necro_idle"
+length = 4.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_8yep8"), ExtResource("3_ojmvp"), ExtResource("4_8wuu1"), ExtResource("5_4sb11"), ExtResource("6_eejom"), ExtResource("7_xf0ca"), ExtResource("8_q1fu6"), ExtResource("9_swkb5"), ExtResource("10_bn4wo"), ExtResource("11_byas0"), ExtResource("12_3i4eq"), ExtResource("13_p5f1i"), ExtResource("14_6qpco"), ExtResource("15_tvaxj"), ExtResource("16_y8kx6"), ExtResource("17_2i2ew"), ExtResource("18_i5wgn"), ExtResource("19_cb6m4"), ExtResource("20_aagp4"), ExtResource("21_h8gri"), ExtResource("22_xqbua"), ExtResource("23_t7e88"), ExtResource("24_kspft"), ExtResource("25_drywa"), ExtResource("26_c8bbf"), ExtResource("27_hlpde"), ExtResource("28_q6wcs"), ExtResource("29_h8rto"), ExtResource("30_xp3em"), ExtResource("31_mg76i"), ExtResource("32_2ugch"), ExtResource("33_4ym0s"), ExtResource("34_g6gt7"), ExtResource("35_g0tdc"), ExtResource("36_gwubp"), ExtResource("37_kmu7b"), ExtResource("38_ijkdl"), ExtResource("39_yiqst"), ExtResource("40_hlbsg"), ExtResource("41_60oie"), ExtResource("42_s7xvt"), ExtResource("43_u3r47"), ExtResource("44_txdib"), ExtResource("45_sselu"), ExtResource("46_ohyhk"), ExtResource("47_h6ypo"), ExtResource("48_ct31j"), ExtResource("49_vyrde"), ExtResource("50_phm8v"), ExtResource("51_01ldc")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v8bot"]

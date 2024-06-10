@@ -28,6 +28,6 @@ class Config:
 	const enemy3_armor = 40
 	const enemy3_health = 60
 	
-	const enemy4_atk = 1#65
-	const enemy4_armor = 1#75
+	const enemy4_atk = 65
+	const enemy4_armor = 75
 	const enemy4_health = 20

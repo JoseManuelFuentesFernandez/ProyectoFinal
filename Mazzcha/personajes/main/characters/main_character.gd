@@ -31,7 +31,9 @@ func _atk1() -> int:
 
 func _atk2() -> int:
 	animation_player.play("swordman_atk2")
+	health = health - atk*0.2 * (1 - armor / 100.0) # Recoil
 	return atk*1.5
+	
 
 func _ability() -> int:
 	animation_player.play("swordman_ability")
@@ -39,18 +41,21 @@ func _ability() -> int:
 
 func _hurt(damage: int):
 	health -= damage
-	if health <= 0:
-		health = 0
-		animation_player.play("swordman_death")
-	else:
-		animation_player.play("swordman_hurt")
+	animation_player.play("swordman_hurt")
 	_update_progress_bar()
 
 func _on_animation_finished(anim_name: String):
 	if anim_name == "swordman_death":
 		animation_player.pause()
-	elif anim_name in ["swordman_atk1", "swordman_atk2", "swordman_ability", "swordman_hurt"]:
+	elif anim_name == "swordman_hurt" && health <= 0:
+		animation_player.play("swordman_death")
+		return
+		
+	if anim_name in ["swordman_atk1", "swordman_ability", "swordman_hurt"]:
 		animation_player.play("swordman_idle")
+	if anim_name == "swordman_atk2":
+		animation_player.play("swordman_hurt")
+	
 
 func set_health(value):
 	_health = value

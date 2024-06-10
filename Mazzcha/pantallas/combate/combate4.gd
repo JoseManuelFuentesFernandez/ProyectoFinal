@@ -13,6 +13,15 @@ func _ready():
 	_start_player_turn()
 
 func _process(delta):
+	if main_character.health <= 0:
+		# Mensaje derrota
+		return
+	
+	if enemy.health <= 0:
+		# Mensaje victoria + comprobar lvl + subida lvl
+		return
+	
+	
 	if !is_player_turn:
 		turn_timer -= delta
 		if turn_timer <= 0:
@@ -28,7 +37,6 @@ func _on_atk_2_pressed():
 	if is_player_turn:
 		var damage = main_character._atk2()
 		enemy._hurt(_calculate_damage(damage, enemy.armor))
-		main_character._hurt(_calculate_damage(damage*0.2, main_character.armor))
 		_end_player_turn()
 
 func _on_ability_pressed():
@@ -57,7 +65,7 @@ func _enemy_turn():
 		0:
 			damage = enemy._atk1()
 		1:
-			damage = enemy._atk2()
+			damage = enemy._atk2()*1.5
 	main_character._hurt(_calculate_damage(damage, main_character.armor))
 	if main_character.health > 0:
 		_start_player_turn()
