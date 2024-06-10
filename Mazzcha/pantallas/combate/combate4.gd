@@ -4,6 +4,9 @@ extends Node2D
 @onready var main_character = $MainCharacter
 @onready var enemy = $enemy4
 @onready var options = $CanvasLayer/options
+@onready var exit_confirmation_dialog = $ExitConfirmationDialog
+@onready var result_dialog = $ResultDialog
+
 
 var is_player_turn = true
 var turn_timer = 5.0
@@ -14,14 +17,24 @@ func _ready():
 
 func _process(delta):
 	if main_character.health <= 0:
-		# Mensaje derrota
+		result_dialog.title = "Derrota"
+		result_dialog.dialog_text = "Has perdido..."
+		result_dialog.ok_button_text = "Salir"
+		result_dialog.popup_centered()
 		return
-	
+
 	if enemy.health <= 0:
-		# Mensaje victoria + comprobar lvl + subida lvl
+		result_dialog.title = "Victoria"
+		result_dialog.ok_button_text = "Continuar"
+		if data.level < 4:
+			result_dialog.dialog_text = "¡Has ganado y subido de nivel!"
+			data.level = 4
+		else:
+			result_dialog.dialog_text = "¡Has ganado!"
+		
+		result_dialog.popup_centered()
 		return
-	
-	
+
 	if !is_player_turn:
 		turn_timer -= delta
 		if turn_timer <= 0:
@@ -71,4 +84,11 @@ func _enemy_turn():
 		_start_player_turn()
 
 func _on_scape_pressed():
+	exit_confirmation_dialog.popup_centered()
+	exit_confirmation_dialog.connect("confirmed", Callable(self, "_on_exit_confirmed"))
+
+func _on_exit_confirmed():
+	get_tree().change_scene_to_file("res://pantallas/menu/MenuPrincipal.tscn")
+
+func _on_result_dialog_confirmed():
 	get_tree().change_scene_to_file("res://pantallas/menu/MenuPrincipal.tscn")

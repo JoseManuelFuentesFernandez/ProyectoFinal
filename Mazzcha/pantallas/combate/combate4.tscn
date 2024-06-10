@@ -22,6 +22,18 @@ slide_on_ceiling = false
 texture_filter = 1
 position = Vector2(1309, 695)
 
+[node name="ExitConfirmationDialog" type="AcceptDialog" parent="."]
+title = "Huir"
+size = Vector2i(200, 100)
+ok_button_text = "Sí"
+dialog_text = "¿Estás seguro?"
+
+[node name="ResultDialog" type="AcceptDialog" parent="."]
+title = "Huir"
+size = Vector2i(200, 100)
+ok_button_text = "Sí"
+dialog_text = "¿Estás seguro?"
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="options" type="VBoxContainer" parent="CanvasLayer"]

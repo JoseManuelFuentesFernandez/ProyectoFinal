@@ -85,3 +85,7 @@ func _on_maz_3_pressed():
 
 func _on_maz_4_pressed():
 	get_tree().change_scene_to_file("res://pantallas/combate/combate4.tscn")
+
+
+func _on_back_button_pressed():
+	get_tree().change_scene_to_file("res://pantallas/menu/MenuPrincipal.tscn")

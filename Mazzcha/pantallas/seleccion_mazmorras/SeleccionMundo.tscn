@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://biytsr2qxp38m"]
+[gd_scene load_steps=7 format=3 uid="uid://biytsr2qxp38m"]
 
 [ext_resource type="Script" path="res://pantallas/seleccion_mazmorras/ScrollContainer.gd" id="1_pr375"]
 [ext_resource type="Texture2D" uid="uid://d3k8wyvoe1342" path="res://pantallas/mazmorras/Battleground1/Bright/1.png" id="2_fn6wl"]
 [ext_resource type="Texture2D" uid="uid://cg1nj4qgsn5ko" path="res://pantallas/mazmorras/Battleground2/Bright/Battleground4_thumb.png" id="2_rfysp"]
 [ext_resource type="Texture2D" uid="uid://081u2qjvjmm3" path="res://pantallas/mazmorras/Battleground3/3.png" id="4_42amt"]
 [ext_resource type="Texture2D" uid="uid://c1ja56hftiiec" path="res://pantallas/mazmorras/Battleground4/Bright/4.png" id="5_pygwt"]
+[ext_resource type="Texture2D" uid="uid://bdjas8jpucbqc" path="res://pantallas/utilities/back-button.png" id="6_06e3i"]
 
 [node name="SeleccionMundo" type="Control"]
 layout_mode = 3
@@ -72,8 +73,18 @@ size_flags_vertical = 4
 texture_normal = ExtResource("5_pygwt")
 stretch_mode = 3
 
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 225.0
+offset_bottom = 225.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("6_06e3i")
+
 [connection signal="gui_input" from="MenuSelectorMundo" to="MenuSelectorMundo" method="_on_ScrollContainer_gui_input"]
 [connection signal="pressed" from="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer/Maz1" to="MenuSelectorMundo" method="_on_maz_1_pressed"]
 [connection signal="pressed" from="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer/Maz2" to="MenuSelectorMundo" method="_on_maz_2_pressed"]
 [connection signal="pressed" from="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer/Maz3" to="MenuSelectorMundo" method="_on_maz_3_pressed"]
 [connection signal="pressed" from="MenuSelectorMundo/CenterContainer/MarginContainer/HBoxContainer/Maz4" to="MenuSelectorMundo" method="_on_maz_4_pressed"]
+[connection signal="pressed" from="BackButton" to="MenuSelectorMundo" method="_on_back_button_pressed"]
