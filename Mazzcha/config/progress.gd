@@ -1,7 +1,7 @@
 class_name Progress
 extends Node
 
-const SAVE_GAME_PATH := "res://data/data.json"
+const SAVE_GAME_PATH := "./data.json"
 
 @export var selected_character : int
 @export var level : int
