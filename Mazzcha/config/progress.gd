@@ -41,6 +41,7 @@ func load_progress():
 		file.close()
 	else:
 		print("El archivo %s no existe o no se pudo abrir." % SAVE_GAME_PATH)
+		reset_progress()
 
 # Método para resetear el progreso
 func reset_progress():
